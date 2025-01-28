@@ -1,0 +1,37 @@
+---
+title: "Golem"
+author: "Preston Smith"
+description: Web-based game made in twine for a college project
+date: "2023-5-9"
+---
+
+
+## Description
+
+Golem is a Twine based adventure game that I developed for one of my classes in college. It's about a golem that is created by a town who's only purpose is to serve the town and is punished for disobeying the town.
+
+[Golem](https://smith07.itch.io/golem-by-preston-smith) 
+
+## Features
+
+- Multiple Boss fights
+- Shops and Minigames
+- Randomized Quests
+- Turn based Combat System
+- Multiple Endings
+- Different Classes and play styles
+    * Knight - Regenerates Health
+    * Mage - Has different interactions around the world and can read books
+    * Thief - Gains more damage as the game goes on
+
+
+::: {layout-ncol=2}
+
+![Classes](/images/Class_screen.jpg)
+
+![Bossfight](/images/Bossfight.jpg)
+
+![Dice](/images/dice_game.jpg)
+
+![Combat](/images/Combat.jpg)
+:::

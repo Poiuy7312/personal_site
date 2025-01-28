@@ -1,0 +1,14 @@
+---
+title: "Digital Art"
+subtitle: "Preston Smith"
+---
+
+::: {layout-ncol=2}
+![Apocalypse 1](/images/Collage%201.jpg)
+![Apocalypse 2](/images/Collage%202.jpg)
+![Apocalypse 3](/images/Collage%203.jpg)
+
+![Magic Lake](/images/Image2.jpg)
+![Space on Earth](/images/Illustration-01.jpg)
+![Lost City](/images/Lost_City_Project.jpg)
+:::

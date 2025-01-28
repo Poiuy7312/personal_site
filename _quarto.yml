@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Preston Smith "
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: FB.qmd
+        text: Software Engineering Projects
+      - href: DB.qmd
+        text: Art
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

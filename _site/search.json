@@ -1,0 +1,261 @@
+[
+  {
+    "objectID": "FB.html",
+    "href": "FB.html",
+    "title": "Software Engineering Projects",
+    "section": "",
+    "text": "Rust based Password Checker and Authenticator\n\n\n\n\n\nStores usernames and passwords and with end to end encryption between a simple server and client.\n\n\n\n\n\nDec 4, 2024\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nChasten\n\n\n\n\n\nChecks for patterns in codes using x-path expressions\n\n\n\n\n\nSep 15, 2023\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nGolem\n\n\n\n\n\nWeb-based game made in twine for a college project\n\n\n\n\n\nMay 9, 2023\n\n\nPreston Smith\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "FB.html#fb1-introduction-to-software-testing",
+    "href": "FB.html#fb1-introduction-to-software-testing",
+    "title": "Professional Précis Fuzzing Book",
+    "section": "",
+    "text": "It is important to test your code and be able to understand it. You can test your code by putting in inputs you know the expected outcome for and compare or you can write a test-case for it which will automatically test and compare the actual output and the set expected output for you. In some cases you can even in a way generate a test case of the Fuzzingbook has a really good example of this.\ndef assertEquals(x, y, epsilon=1e-8):\n    assert abs(x - y) &lt; epsilon\nThis is for testing a Square root function as \\(\\sqrt{n} * \\sqrt{n} = n\\). Since that is always true you don’t need a test case for different types of numbers. You should also check for invalid inputs so if someone tries to put a string into something that calculates squares that’s not going to work so your code should account for that in some way. Fuzzingbook has another good example of this\ndef sqrt_program(arg: str) -&gt; None:  # type: ignore\n    try:\n        x = float(arg)\n    except ValueError:\n        print(\"Illegal Input\")\n    else:\n        if x &lt; 0:\n            print(\"Illegal Number\")\n        else:\n            print('The root of', x, 'is', my_sqrt(x))\n\n\nOverall writing test cases and testing your code can be very beneficial not only for chasten but anything you do as it will make your code more polished and professional and easier to use for anyone trying to."
+  },
+  {
+    "objectID": "FB.html#fb2-code-coverage",
+    "href": "FB.html#fb2-code-coverage",
+    "title": "Professional Précis Fuzzing Book",
+    "section": "FB2 Code Coverage",
+    "text": "FB2 Code Coverage\nCode Coverage is very important when writing test cases because you want to strive for as much of your code being tested as possible. So being able to check the effectiveness and coverage are crucial when writing good test cases. An example on how you can test this in the Fuzzing Book where there is a library with functions like .trace() and .coverage() which list what lines are in a given function and one returns what lines of code are at least run once. and using these libraries there was code that prints out code with the run lines marked by a # symbol\n\nUse-case\nThis can be very useful when working on chasten to test if the test cases being written and already there are doing their job properly. One of the last things you want is for you to test your code think it works but a significant portion of it is not being tested and maybe there is some major bug that is missed as a result. This is even more important when making software other people are going to use because then a lot more things can go wrong. After all, the code may need to adapt to different computers causing more issues that could be missed by testing."
+  },
+  {
+    "objectID": "FB.html#fb3-fuzzing",
+    "href": "FB.html#fb3-fuzzing",
+    "title": "Professional Précis Fuzzing Book",
+    "section": "FB3 Fuzzing",
+    "text": "FB3 Fuzzing\nThe basic idea of fuzzing is to test as many possible reasonable inputs as possible so if you have a function that is supposed to receive a string. Then you can create a fuzzing generator that creates a string of random characters and with that and a runner to run the code you can test the limits of that specific function or program. This is a great way to test your code with unorthodox inputs and while they may be unlikely it can still help find. greater problems like let’s say you have a program that can only take a certain length of string before it crashes or if you’re doing something with math and a weird number or abnormally large number causes crashes or bugs. A fuzzer is a great way to help find these issues as so many different numbers and characters can be used by the code as inputs that having something to just check as many possibilities as possible can help improve the program’s efficiency and robustness.\n\nThe FuzzingBook has a great example of a basic fuzzer:\ndef fuzzer(max_length: int = 100, char_start: int = 32, char_range: int = 32) -&gt; str:\n    \"\"\"A string of up to `max_length` characters\n       in the range [`char_start`, `char_start` + `char_range`)\"\"\"\n    string_length = random.randrange(0, max_length + 1)\n    out = \"\"\n    for i in range(0, string_length):\n        out += chr(random.randrange(char_start, char_start + char_range))\n    return out\n\n\nUse-case\nThis can be a very useful concept for helping to uncover bugs as in my experience with chasten I’ve found a lot of bugs by just running the program with expected outputs. So, I can only imagine how many there are when there’s a lot of information it must sort through or when there’s an unexpected input which isn’t necessarily a bug, but it very well could be and the concept of something checking multiple different inputs and possibilities may help uncover many obscure bugs and issues."
+  },
+  {
+    "objectID": "FB.html#fb4-mutation-analysis",
+    "href": "FB.html#fb4-mutation-analysis",
+    "title": "Professional Précis Fuzzing Book",
+    "section": "FB4 Mutation Analysis",
+    "text": "FB4 Mutation Analysis\nMutation analysis is just giving a function improper input on purpose the idea being if it. can’t detect when an input is incorrect it won’t be able to detect a bug. So, you can make functions that. take a test case and change it in certain ways to see if the program notices the change and if it doesn’t. you can have a problem. But you need to be careful when analyzing the mutations as they may be functionally identical to the original meaning you haven’t found a real issue.\nAn example of what you want to avoid is provided by the fuzzing book while being a bit extreme circumstance.\ndef ineffective_test_2():\n    try:\n        execute_the_program_as_a_whole()\n    except:\n        pass\n    assert True\nWhile this technically runs the code and gets code coverage another important subject when it comes to testing but that only checks if the test case runs all the code not if it checks what it’s supposed to. The above test case always returns true because all it does is run the function and if the function doesn’t run it still just. returns true because when asserting it doesn’t compare it to anything.\n\nUse-case\nMutation analysis is important when testing as you need to make sure your code is thoroughly testing what you want and isn’t giving any false negatives or false positives as then there may be a bug or issue you don’t know about. While you don’t need to write a function to mutate it for you it’s good to maybe have test cases that purposely fail so that you know your code won’t take improper inputs and run not finding any issues."
+  },
+  {
+    "objectID": "FB.html#fb5-mutation-based-fuzzing",
+    "href": "FB.html#fb5-mutation-based-fuzzing",
+    "title": "Professional Précis Fuzzing Book",
+    "section": "FB5 Mutation-Based Fuzzing",
+    "text": "FB5 Mutation-Based Fuzzing\nSince fuzzing and generating random inputs can often cause difficulties with syntax and may often just come up with unreasonable inputs you can fix this type of issue with mutation-based fuzzing. This works by only changing small things for each input, so everything should be around the same structure with small differences this makes it so the inputs can be more reasonable and are still checking what happens with your code. While this may make your testing less broad it helps get rid of some of the redundant testing that happens when running a fuzzer most likely most of your tests are redundant.\ndef mutate(s: str) -&gt; str:\n    \"\"\"Return s with a random mutation applied\"\"\"\n    mutators = [\n        delete_random_character,\n        insert_random_character,\n        flip_random_character\n    ]\n    mutator = random.choice(mutators)\n    # print(mutator)\n    return mutator(s)\nThis is an example of a mutator it takes an input decides to use a function that changes it in some way and returns the resulting value. This just changes small things to an already predefined input so it’s not completely randomly generated so it’s more focused testing.\n\nUse-Case\nI believe this version of testing for chasten is a lot more useful and is kind of what hypothesis is used for while it’s not the same thing it allows you to focus your fuzzing through the use of strategies. So the concept itself is very useful making it so you not just testing random inputs and similar but different inputs in a circumstance it’s expected."
+  },
+  {
+    "objectID": "FB.html#fb6-fuzzing-with-grammars",
+    "href": "FB.html#fb6-fuzzing-with-grammars",
+    "title": "Professional Précis Fuzzing Book",
+    "section": "FB6 Fuzzing with Grammars",
+    "text": "FB6 Fuzzing with Grammars\nA Grammar is a way to represent syntax rules which is very useful for fuzzing because if you have something that’s supposed to take a very structured input that can be very difficult to test with just normal fuzzing as the vast majority of the inputs will fail. A Grammar fixes this by allowing you to set it up in a way that follows that structure and gives inputs that should be expected to the function and tests it that way instead of giving completely random inputs. It still gives it different combinations but they are all structurally correct.\nA good example of a Grammar is below from the Fuzzing Book:\n&gt;&gt;&gt; US_PHONE_GRAMMAR: Grammar = {\n&gt;&gt;&gt;     \"&lt;start&gt;\": [\"&lt;phone-number&gt;\"],\n&gt;&gt;&gt;     \"&lt;phone-number&gt;\": [\"(&lt;area&gt;)&lt;exchange&gt;-&lt;line&gt;\"],\n&gt;&gt;&gt;     \"&lt;area&gt;\": [\"&lt;lead-digit&gt;&lt;digit&gt;&lt;digit&gt;\"],\n&gt;&gt;&gt;     \"&lt;exchange&gt;\": [\"&lt;lead-digit&gt;&lt;digit&gt;&lt;digit&gt;\"],\n&gt;&gt;&gt;     \"&lt;line&gt;\": [\"&lt;digit&gt;&lt;digit&gt;&lt;digit&gt;&lt;digit&gt;\"],\n&gt;&gt;&gt;     \"&lt;lead-digit&gt;\": [\"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\"],\n&gt;&gt;&gt;     \"&lt;digit&gt;\": [\"0\", \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\"]\n}\nThe Grammar above gets you a properly structured phone number and it uses only things that would be in a phone number. this allows you to generate a phone number for fuzzing in the proper structure and in a way that it could be a real phone number.\n\nUse-Case\nThis is very useful for Chasten as it takes a lot of highly structured inputs making normal fuzzing not good enough for the purposes of testing a large majority of the tool but with Grammars we can get those structured inputs but also some of the randomness that comes with fuzzing so its a bit of best of both worlds and its very useful for testing tools like Chasten."
+  },
+  {
+    "objectID": "FB.html#fb7-efficient-grammar-fuzzing",
+    "href": "FB.html#fb7-efficient-grammar-fuzzing",
+    "title": "Professional Précis Fuzzing Book",
+    "section": "FB7 Efficient Grammar Fuzzing",
+    "text": "FB7 Efficient Grammar Fuzzing\nNormal fuzzing with Grammars is not the efficient because it has the possibility have making things expand infinitely in this chapter. it talks about using trees to help deal with this. Using a tree allows you to make the different parts of the Grammar into nodes which. each have a max length. It can also decide on which part should be changed depending on how much time it takes so if changing one node. costs significantly less time and memory than another you can set it up, so it prioritizes changes that one over the rest. It gets the results from the leaf’s which are nodes without children so you can have the root node which has children which may be the different parts of the structure which also have children which in the case of something like a string may represent a character. So anytime something is changed its not creating a new string or integer or anything like that it doesn’t change what is already there it either removes or adds. to it. Making it faster and allowing you to control it more.\n\nUse-case.\nThis is useful in that it’s just a more efficient way to use Grammars but I feel that it isn’t too useful overall with chasten as I don’t believe chasten requires anything this complex to test a lot of its basic functions. So, while it is useful, I don’t think it’s something that will majorly change how at least in this circumstance changes how we write test cases."
+  },
+  {
+    "objectID": "FB.html#fb8-parsing-inputs",
+    "href": "FB.html#fb8-parsing-inputs",
+    "title": "Professional Précis Fuzzing Book",
+    "section": "FB8 Parsing Inputs",
+    "text": "FB8 Parsing Inputs\nThis chapter discusses how to use already existing inputs and have something parse them so they can be rearranged, mutated or changed to make more valid inputs. The idea of parsing inputs with grammar is just a way to get more controlled tests so now instead of controlling the structure you also control what the input values actually are to an extent. You can also have it create a derivation tree of the predefined inputs and based on a defined grammar. This reduces some randomness in Grammars allowing more plausible inputs to be tested at a better rate and even less redundant testing.\n\nUse-case\nThere is no reason to do this currently maybe in the future but there is currently not enough time and the amount of effort to do this for a small scale project is too large to be worth implementing. The benefits are also not really that great for the most at this point fuzzing is getting more and more specific so it becoming more and more situational and kind of losing it’s original purpose. The purpose of fuzzing is to find bugs trying to control it so much may hinder its ability to do that."
+  },
+  {
+    "objectID": "FB.html#fb9-reducing-failure-inducing-inputs",
+    "href": "FB.html#fb9-reducing-failure-inducing-inputs",
+    "title": "Professional Précis Fuzzing Book",
+    "section": "FB9 Reducing Failure-Inducing Inputs",
+    "text": "FB9 Reducing Failure-Inducing Inputs\nWhen using tests for code that purposefully fail or cause the code to crash it’s important to understand why it fails and to know the circumstances that cause it. If you want to fix something you need to know more than the fact that it’s broken you need to know how and why. When running tests you should know which parts of the code are causing the issue a fuzzer or mutator based approach can tell you that it’s broken but not why alot of the time. You can find this out completely manually where you keep testing until you find the issue or you can do something known as Delta Debugging which takes the inputs that broke the test or build and uses something similar to a binary search algroithim so it will take away parts of the input at a time and see if it still breaks it or if the issue is solved. This can allow you to narrow down the causes of a bug or defect and allow to more efficiently fix it if needed.\nAn example of this is in the Fuzzingbook\nclass DeltaDebuggingReducer(CachingReducer):\n    \"\"\"Reduce inputs using delta debugging.\"\"\"\n\n    def reduce(self, inp: str) -&gt; str:\n        \"\"\"Reduce input `inp` using delta debugging. Return reduced input.\"\"\"\n\n        self.reset()\n        assert self.test(inp) != Runner.PASS\n\n        n = 2     # Initial granularity\n        while len(inp) &gt;= 2:\n            start = 0.0\n            subset_length = len(inp) / n\n            some_complement_is_failing = False\n\n            while start &lt; len(inp):\n                complement = inp[:int(start)] + \\\n                    inp[int(start + subset_length):]\n\n                if self.test(complement) == Runner.FAIL:\n                    inp = complement\n                    n = max(n - 1, 2)\n                    some_complement_is_failing = True\n                    break\n\n                start += subset_length\n\n            if not some_complement_is_failing:\n                if n == len(inp):\n                    break\n                n = min(n * 2, len(inp))\n\n        return inp\nThis code takes an input and tests it than reduces it until it’s reduced to a single character this makes debugging outputs more specific and helpful and also allow for better tracking of what’s actually happening in the code when there is some sort of failure.\n\nUse-case\nThis is a relativly useful idea but for the context that we would us it in I feel this concept is also a little to much work to implement for relativly minimal gain yes it’s helpful but we aren’t working with super complex inputs and it may take more time setting this type of thing up than it would be just to figure things out manually but the concept of reducing itself is very important in debugging it is a good way to find what’s wrong with something and can often lead to better understanding of the code. But the autonomous way of doing this is simply a little to complicated to be worth implementing on projects of the scale where working on."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Description\n\nI’m a Software Engineering Major and Art,Science and Innovation Minor at Allegheny College class of 2026. I hope to work in the video game industry which spurred my interest in computers. I also like to Make digital Collages in Photoshop and Illustrator which are normally inspired by video games or movies.\n\nPersonal Information\n\nEmail: pjs075637@gmail.com\nPhone: 412-952-6329\n\n\nResume"
+  },
+  {
+    "objectID": "index.html#se1-programming-overtime",
+    "href": "index.html#se1-programming-overtime",
+    "title": "Professional Précis SE Book",
+    "section": "",
+    "text": "The difference between software engineering and programming is professionalism and consistency ultimately software engineering can be defined as programming integrated over time. What can someone do to make a code sustainable and improve upon in the future what are some tools that can be used to make something more efficient all of this is software engineering. There are three things to take into account according to The section Programming Overtime in the book Software Engineering at Google.\n\nHow the code will need to be changed over its lifetime\nHow you will have to adapt as things change and evolve\nTake into account Time change Scale and growth when making a decision.\n\n\n\nI believe this way of thinking is not only beneficial to Chasten but almost any software engineering project in general because, at the end of the day, all it’s saying is to expect things to change. And how you need to make decisions which means you may not be able to do everything you wanted to which I feel should be somewhat expected a lot of the time."
+  },
+  {
+    "objectID": "index.html#se2-what-is-software-engineering",
+    "href": "index.html#se2-what-is-software-engineering",
+    "title": "Professional Précis SE Book",
+    "section": "SE2 What is Software Engineering?",
+    "text": "SE2 What is Software Engineering?\nOnce again Software Engineering is defined as programming over time but this time in more detail. While a programming project might be a single-person endeavor a software engineering project is a team effort. Teamwork is very important for these types of projects as while working as a team can have its issues the amount you can do with more people is much greater. You have to take into account problems and changes to the software appearing as it is being made and when it is already released. You need to make trade-offs between how much money or time something is gonna cost and how much benefit it will have for the software. A software engineering project is expected to last for years and with that needs to be amiable to changes as maybe the dependencies it uses to change the OS changes and also competition at least at a large scale that might arise to not be overshadowed by superior software.\n\nUse-Case\nThis way of thinking while I don’t think entirely applicable to chasten I think the importance of working together and taking into account how things change is very important especially since overall we seem to be having problems working together and being organized. This has led to things not being done on time and multiple people being confused about what they should do and what they are doing. So I think communication with each other is very important for chasten and software in general and after that comes the more complicated questions on how chasten may change over time how long we want it to last and how amicable it is are second to teamwork."
+  },
+  {
+    "objectID": "index.html#se3-how-to-work-well-on-teams",
+    "href": "index.html#se3-how-to-work-well-on-teams",
+    "title": "Professional Précis SE Book",
+    "section": "SE3 How to Work Well on Teams",
+    "text": "SE3 How to Work Well on Teams\nTeamwork is an important aspect of Software Engineering almost every major accomplishment in Software Engineering was accomplished by groups of people, not one person by themselves. While Linus Torvalds created the framework for Linux the vast majority of its current form was made by other people there is not just one person who’s good at everything many people are required to make something truly great even if you might consider someone a genius. It doesn’t require a genius to make something important just a team of individuals who communicate, cooperate and criticize to get the best possible product or result. Michael Jordan didn’t win six championships as an individual he one them as a part of the Chicago Bulls basketball team.\n\nUse-Case\nThis is very important to keep in mind two minds are better than one you aren’t going to be able to do everything on your own. For chasten, while it’s not the largest project it is certainly not something we can achieve as individuals almost everything we do can affect someone else’s work making it important that we communicate what we are doing and why we are doing it. Things get done faster and often better when working together."
+  },
+  {
+    "objectID": "index.html#se4-knowledge-sharing",
+    "href": "index.html#se4-knowledge-sharing",
+    "title": "Professional Précis SE Book",
+    "section": "SE4 Knowledge Sharing",
+    "text": "SE4 Knowledge Sharing\nPeople in your organization or team should understand the problems of your software better than the internet. Often what happens is people withhold information so people will have a lot of information about a certain part but when they need to work with a different part of the program they don’t have the knowledge needed to work efficiently. This is not what you want you want everyone to be properly educated on the software they’re working on. This also causes people working in the same team to do things differently because they have different information which can cause conflicts and confusion slowing down the process of making a proper software program. Relating to the bus factor if one person has all the information on a subject and they get hit by a bus all the information is gone setting the project back significantly depending on what that person withheld then having to need people figure it out for themselves.\n\nUse-Case\nWith Chasten, a lot of people only have information on certain parts of the software and this causes problems when these people aren’t present as then we have no information on possibly a major part of the program leaving everyone I guess what is going on. Some people barely know the basics of the program so they may be assigned to a task and making very little progress because they don’t have the information required and no one would know as it’s not communicated."
+  },
+  {
+    "objectID": "index.html#se5-engineering-for-equity",
+    "href": "index.html#se5-engineering-for-equity",
+    "title": "Professional Précis SE Book",
+    "section": "SE5 Engineering for Equity",
+    "text": "SE5 Engineering for Equity\nOften with Software engineering especially on a large scale as in something like Google, it is important to keep in mind the broad amount of people that will be using your product. You need to make sure you are aware of some cultural differences and are proactive about finding and discovering problems in your software that may not affect you directly. A good example is brought up in this chapter where a software engineer found that Google image search algorithms would have black people show up when searching gorilla which is very bad. This was a major oversight from Google and is a result of them not including enough data on underrepresented people and just didn’t think this could be an issue. It’s also important to realize not everyone who uses your software is an expert so it should be easy to use and understand or at least fairly intuitive. If it’s not then you objectively have a bad product that may be clunky to use and has unintended issues that may anger people or offend them.\n\nUse-Case\nI think within this class I think the idea of thinking about who is using your software is very important and expecting many different types of people to use it. And while there probably won’t be anything as serious as what happened with Google it’s still important to design software with other people in mind not just the ones making it."
+  },
+  {
+    "objectID": "index.html#se6-how-to-lead-a-team",
+    "href": "index.html#se6-how-to-lead-a-team",
+    "title": "Professional Précis SE Book",
+    "section": "SE6 How to Lead a Team",
+    "text": "SE6 How to Lead a Team\nIn a software engineering team there needs to be some form of leader otherwise the team may be directionless and unorganized. While it is good to have everyone to contribute to conversations you can’t have everyone lead themselves as this causes groups to be disjointed and inefficient. It’s important to have someone to make sure things are getting done teams are properly staffed to fix an issue or add a feature. A lot of people avoid taking on a manager type of role because they often feel like they didn’t do anything because you’ll often be written less code. It also is significantly more responsibilty and in return stress.\n\nUse-case\nI think having a leader would be very important for the class and while we do technically have leaders they change everyweek which leads to different things being the focus each week or there not being a focus at all leading to nothing really getting done at a reasonable pace. The leaders being changed everyweek also causes people who may not be ready for that responsibility and there being forced into that situation which is fine in a classroom circumstance because it’s relativly low stakes but I believe it’s partially one of the reasons alot of issues have taken alot longer than expected to fix."
+  },
+  {
+    "objectID": "index.html#se7-leading-at-scale",
+    "href": "index.html#se7-leading-at-scale",
+    "title": "Professional Précis SE Book",
+    "section": "SE7 Leading at Scale",
+    "text": "SE7 Leading at Scale\nThe more you move up in a leadership possions the less your technical abiltitys and understanding of the project really matter. The farther up you go the more broad problems you will be asked to handle but they won’t be as deep as ones your used to solving. You also need to make trade-offs as a leader its important to understand everything has a give and take. It’s important that you can be making these descisions and understand why they need to be made. You’ll be constantly having to make new descicions and its important to make the best descisions you possibly can with maybe not the best understanding of the situation and its your job to guide the total direction of the group.\n\nUse-case\nThere isn’t really much of a Useful thing for us specifically right now because the scale will never be that large but the overall concept of what it means to be an effective leader is important for people to understand in general. It’s also important understand what taking on a leadership position actually implies and the types of responsibilties you will have and be expected to deal with."
+  },
+  {
+    "objectID": "index.html#se8-style-guides-and-rules",
+    "href": "index.html#se8-style-guides-and-rules",
+    "title": "Professional Précis SE Book",
+    "section": "SE8 Style Guides and Rules",
+    "text": "SE8 Style Guides and Rules\nThis chapter talks about the idea of having rules for how people in an orginization code. This can be something like naming conventions how certain parts of code are written how things are defined. This is used so that people can avoid using bad habits or making some sort of error at least in the context of the organization. It can also be a way to promote consistency with in code if a similar issue is solved in two different ways that’s not inherently bad but it is when striving for consistency in code. Having rules can make everyone start to code in a similar way and format making it easier to communicate and understand what code is supposed to do person to person. As mentioned in the article it is also important to not have to many rules as it can provide a bit of an overload of information and decrease efficiency the rules and principles should be relativly intuitive and easy to adapt too. They should not be something that activly hinders someone from completing a task or is simply unpractical. Overall rules and guidelines can help improve consistency communication and overall readability for everyone involved in the long run, but if taken too far can do the opposite and be a hinderance.\n\nUse-case\nWe have already started to this in with our projects specifically with committing and creating pull requests and issues. For commiting were supposed to use the format where if where adding a feature its feat: random_feature and for pull requests and issues theres a frame work that is supposed to be followed that is shown when creating either of them. We even have linters that help define some formatting rules automatically like Black and Ruff which everyones code has to adhear to those standards for the most part or it will fail the build. Although in some of these cases it’s not always clear on what are rules for example me personally I didn’t know we where supposed to write our commit messages in a certain format until a couple weeks in. So communicating what the rules are but other than that I feel that these concepts for the most part are already implemented."
+  },
+  {
+    "objectID": "index.html#se9-code-review",
+    "href": "index.html#se9-code-review",
+    "title": "Professional Précis SE Book",
+    "section": "SE9 Code Review",
+    "text": "SE9 Code Review\nCode review is an important part of software engineering it’s important for your code to be reviewed bny other before they effect the main repo for the project. At google this takes the form of making comments and people testing the changes through snapshots and comparing the changes to the current version giving feedback or just providing more information. It’s important for other people to review your code as it gets another persons point of view and often expertise on it and can easily lead to more clean and efficient code and just a better project enviroment in general.\n\nUse-case\nThis is already used alot in this class you can’t merge anything with the main branch unless its reviewed by others and people do comment on and give feedback to changes. So alot of these concepts are already in use. I feel however that we can still do better it often feels like people review something and don’t have a real understanding of what it’s actually doing they just know it doesn’t break the build. I do this personally I don’t really to take the time to test the code myself and while I haven’t personally reviewed many peoples changes the ones I have i’ve rarely understood that well. So we can definitly be a little more helpful when it comes to reviewing in general but we definitaly follow alot of these concepts already."
+  },
+  {
+    "objectID": "index.html#se10-documentation",
+    "href": "index.html#se10-documentation",
+    "title": "Professional Précis SE Book",
+    "section": "SE10 Documentation",
+    "text": "SE10 Documentation\nDocumnetation is important because it helps spread information it’s easier to work on something if there is documnetation on how it works similar to a manual for something. It also makes it more efficient to work on something because everything is clearly outlined. Documentation is significantly more important for team based work than solo based but Documnetation on how your tool works should always be a thing because it allows you to explain how to use it and maybe give information on how to set it up if something isn’t working so more people can use the tool with less issues. When writing documnetation it’s important to keep in mind who your audience is and should generally focus on one thing at a time.\n\nUse-case\nDocumnetation is very useful for anyprogramming project it allows you to work better and mroe efficiently in teams and also explain how something should work so people can find issues easier. It also just encourages better communication and reduces bus factor because the more information is documented the less reliant you are on one person knowing the answers so using more documnetation in projects would be very beneficial for us."
+  },
+  {
+    "objectID": "index.html#se11-test-overview",
+    "href": "index.html#se11-test-overview",
+    "title": "Professional Précis SE Book",
+    "section": "SE11 Test Overview",
+    "text": "SE11 Test Overview\nTesting is an important aspect of writing a program everyone does it to varying degrees whether it’s manually running it to see if it has an expected outputs or have automatic tests set up through things like pytest. Testing is important because without it you really have no idea if your code works or is well designed. Not only do tests ensure a higher quality code base but it also improves your ability to make changes by allowing bugs to be found faster and more efficiently making them easier to fix.\n\nUse-case\nWe already use test cases with chasten and cell-veyor and this concept is pretty basic to software engineering so I feel that we have already implemented this idea for the most part."
+  },
+  {
+    "objectID": "index.html#se12-unit-testing",
+    "href": "index.html#se12-unit-testing",
+    "title": "Professional Précis SE Book",
+    "section": "SE12 Unit Testing",
+    "text": "SE12 Unit Testing\nUnit tests are very useful as they use modularity of well designed code to there advantage they tend to be be relativly small and simple making them easier to write and debugg. They also are faster and more efficient and only encompass a certain part of the code. They can make it very easy to understand what is going wrong as since they have a small scope there contained and you know it’s a problem for a specific portion of code. Most of google’s tests arre unit tests as stated before there easy to write and simple but there also less finicky then larger tests making them more reliable as well. But there is still a use for broad-scoped tests for the most part unit tests are preffered.\n\nUse-case\nUnit tests are very useful for chasten infact most of the current tests are unit tests the ones that aren’t are seeing if the code crashes when the command is run. Using unit tests also encourage modularity as you can’t really have them without it. I have personally found myself having to make my code more modular so I can simplify the tests and make them unit tests instead of very confusing complicated and sometimes unreliable."
+  },
+  {
+    "objectID": "DB.html",
+    "href": "DB.html",
+    "title": "Digital Art",
+    "section": "",
+    "text": "Lost City\n\n\n\n\n\n\n\nApocalypse 1\n\n\n\n\n\n\n\n\n\nApocalypse 2\n\n\n\n\n\n\n\nApocalypse 3\n\n\n\n\n\n\n\n\n\nSpace on Earth"
+  },
+  {
+    "objectID": "DB.html#db1-introduction-to-debugging",
+    "href": "DB.html#db1-introduction-to-debugging",
+    "title": "Professional Précis Debugging Book",
+    "section": "",
+    "text": "The first chapter of the debugging book mostly goes over the basics of debugging and different ways to detect a bug it talks about printf debugging which is when you put print statements in your code to help you keep track of what’s going on it mentions this method is very inefficient. It also talks about that when debugging you need to solve the cause not the symptom so if you see a bug for a certain input you can’t just fix it for that specific input you need to fix the problem in general which means finding the root cause. Which this chapter suggests doing through the scientific method ask a question of why something isn’t working come up with a theory figure out how you can test it test it and repeat until you find the issue.\n\n\nThis is obviously useful because it just broad debugging concepts and thing to keep in mind when doing it. It’s not something you can’t really figure out on your own and there’s nothing in this chapter that is particurly complicated so implmenting the concepts can be almost immediate if they aren’t already."
+  },
+  {
+    "objectID": "DB.html#db2-tracing-executions",
+    "href": "DB.html#db2-tracing-executions",
+    "title": "Professional Précis Debugging Book",
+    "section": "DB2 Tracing Executions",
+    "text": "DB2 Tracing Executions\nTracing a programs execution is to help with debugging by showing the step the program took when running and if there was a crash it allows you to look through the steps and see where it failed and fix the root cause of the problem more effectivly a simple way you can do this is to use sys.settrace() function which traces everyline of code run and prints it but this can sometimes give you to much information so you may want something a little more limited. an example of this\ndef remove_html_markup_traced(s):  # type: ignore\n    sys.settrace(traceit)\n    ret = remove_html_markup(s)\n    sys.settrace(None)\n    return ret\nThis will trace the the remove_html_markup function and print out the results even if the code crashes it will show you everything that ran. As stated before this is very useful because it makes finding the cause of a bug significantly easier and more convenient.\n\nUse-case\nAt least with chasten most of the test cases actually do get traced in fact the ones that use hypothesis are automaticlly traced by hypothesis so this type of thing is already for the most part implemented. So all we really would want is have non hypothesis functions traced but other than that this concept is already implemented for the most part."
+  },
+  {
+    "objectID": "DB.html#db3-assertions",
+    "href": "DB.html#db3-assertions",
+    "title": "Professional Précis Debugging Book",
+    "section": "DB3 Assertions",
+    "text": "DB3 Assertions\nAssert statements are very useful when it comes to debugging as they can make writing test cases very easy by leveraging things that should be true. So in the case of test cases if you know what the output should be you can use an assert statement that will throw an error if the output isn’t what is expected an example of this in the debugging book is\ndef test_square_root() -&gt; None:\n    assert square_root(4) == 2\n    assert square_root(9) == 3\nThis is testing a function that finds the square root of numbers and leverages the fact that 4 and 9 are perfect squares and we know what the square root should be. So it’s checking that the output is what’s expected and that it’s finding the square root properly.\nAnother way they can be used is a form of debug handling in the following example there used to check to make sure that the provided input isn’t a negative number and to check that the result of the computation is close to the expected value by utilizing the math module. If the code doesn’t fit these criteria it will throw an AssertionError and stop running\ndef square_root(x):  # type: ignore\n    assert x &gt;= 0  # precondition\n\n    approx = None\n    guess = x / 2\n    while approx != guess:\n        approx = guess\n        guess = (approx + x / approx) / 2\n\n    assert math.isclose(approx * approx, x)\n    return approx\n\nUse-case\nWe already use a ton of assert statements in test cases as they are easy to use and make checking things alot simpler. We don’t really use them for debug handling and exampled in the debugging book nor do we really need to but it is a way they can be used. Since for the most part we already use assert statements I don’t really think there is anything we can implement that’s new from this chapter of the debugging book but it may be useful in the future."
+  },
+  {
+    "objectID": "DB.html#db4-statistical-debugging-automatic-fault-localization",
+    "href": "DB.html#db4-statistical-debugging-automatic-fault-localization",
+    "title": "Professional Précis Debugging Book",
+    "section": "DB4 Statistical Debugging (Automatic Fault Localization)",
+    "text": "DB4 Statistical Debugging (Automatic Fault Localization)\nThe idea of Statistical Debugging is kind of self explanatory it’s the idea that when you have a program that doesn’t always run you can manually or have a program automatically run it and try to find a correlation between the failures and a specific part of the program whether it’s just a single line or if something isn’t being covered in tested it may be considered a possibility. The idea is to trace code when it’s being run and find similaritys between failures to narrow down the cause it’s a similar concept to reducing failute inducing inputs in the fuzzing book.\ndef code_with_coverage(function: Callable, coverage: Coverage) -&gt; None:\n    source_lines, starting_line_number = \\\n       getsourcelines(function)\n\n    line_number = starting_line_number\n    for line in source_lines:\n        marker = '*' if (function, line_number) in coverage else ' '\n        print(f\"{line_number:4} {marker} {line}\", end='')\n        line_number += 1\nCoverage is heavily used in this process as it tells what lines where run and what weren’t which can be used to help to determine the pausible cause of failure like maybe it only fails if line 3 is run so it can determine a large correlation between the line and the code crashing. The above function printing which lines are run and you can use something like this to help analyze what’s going. So in a way all this concept is statistical analysis trying to find a correlation between something.\n\nUse-case\nThis is useful in a very general sense as it’s an important process in debugging in general and just running the code and seeing what happens can a encompass this concept in a general sense so in that way these concept are already use but having code automatically run seems like It would have to be a future endeavor as a lot of things already set up do some of this already and normal tracing achieves a lot of the same functionallity just without the reduction in data. So it would be a cool thing to implement in the future but not with the time we have left to work on the projects."
+  },
+  {
+    "objectID": "index.html#contact-information",
+    "href": "index.html#contact-information",
+    "title": "Home",
+    "section": "",
+    "text": "Email: pjs075637@gmail.com"
+  },
+  {
+    "objectID": "index.html#personal-information",
+    "href": "index.html#personal-information",
+    "title": "Home",
+    "section": "Personal Information",
+    "text": "Personal Information\nEmail: pjs075637@gmail.com\nPhone: 412-952-6329"
+  },
+  {
+    "objectID": "index.html#description",
+    "href": "index.html#description",
+    "title": "Home",
+    "section": "Description",
+    "text": "Description\nI’m a Software Engineering Major and Art,Science and Innovation Minor at Allegheny College class of 2026"
+  },
+  {
+    "objectID": "projects/rust_password.html",
+    "href": "projects/rust_password.html",
+    "title": "Rust based Password Checker and Authenticator",
+    "section": "",
+    "text": "This is a program that takes a username and password and stores it for later use it’s programmed in the rust programming language. This is due to it’s fast compile time and guaranteed memory safety in it’s program. This was mostly a project to create something that simulates password storage between a server and client.\n\nFeatures\n\nExtensive user interface\nCreated passwords must follow certain rules in order to be valid\nStores passwords as a hash using the argon2 hashing algorithm\nEnd to end encryption between the server and client\n\n\n\nExample of GUI\n\n\n\nRatutui\n\n\nThe user interface is made using the rust crate ratatui.\n\n\nHow it works\nThe program communicates with a socket server after the user types in there username and password. It sends the information to the server and gets a response to a server which will either create an account or if the password doesn’t follow rules like must be eight characters and must have a capital letter for example.\nPassword-Check"
+  },
+  {
+    "objectID": "projects/chasten.html",
+    "href": "projects/chasten.html",
+    "title": "Chasten",
+    "section": "",
+    "text": "I mostly worked on trying to implement the program with an LLM to generate x-path expressions to be used. as well as some minor bug fixes\nchasten create-checks\nWhich will then display a textual app the code for which is in the configApp.py file:\n\nApp Example\n\n\n\nTextual\n\n\nIt will also prompt for an API key if one has not been given already just through a terminal input which it will then store an encrypted version into a text file using fernet.\nThe code than takes the inputs given by the user and stores it in a csv file split that information up when then the app is closed and use the write_checks function in configApp.py to format it in way to have consistently formatted inputs to send to chatGPT in an attempt to make the program more consistent.\nIt then displays the checks and sends the information to chatGPT and gets the results which is handled in the createchecks.py file and then displays the results in the terminal and stores it in a YAML file called checks.yml or whatever the user specify.\n\n\nOutput Example\n\n\n\nimage_2023-11-21_150812765\n\n\nChasten"
+  },
+  {
+    "objectID": "projects/Golem.html",
+    "href": "projects/Golem.html",
+    "title": "Golem",
+    "section": "",
+    "text": "Golem is a Twine based adventure game that I developed for one of my classes in college. It’s about a golem that is created by a town who’s only purpose is to serve the town and is punished for disobeying the town.\nGolem"
+  },
+  {
+    "objectID": "index.html#resume",
+    "href": "index.html#resume",
+    "title": "Home",
+    "section": "Resume",
+    "text": "Resume\n\n\n\nPersonal Information\n\nEmail: pjs075637@gmail.com\nPhone: 412-952-6329"
+  },
+  {
+    "objectID": "projects/Golem.html#description",
+    "href": "projects/Golem.html#description",
+    "title": "Golem",
+    "section": "",
+    "text": "Golem is a Twine based adventure game that I developed for one of my classes in college. It’s about a golem that is created by a town who’s only purpose is to serve the town and is punished for disobeying the town.\nGolem"
+  },
+  {
+    "objectID": "projects/Golem.html#features",
+    "href": "projects/Golem.html#features",
+    "title": "Golem",
+    "section": "Features",
+    "text": "Features\n\nMultiple Boss fights\nShops and Minigames\nRandomized Quests\nTurn based Combat System\nMultiple Endings\nDifferent Classes and play styles\n\nKnight - Regenerates Health\nMage - Has different interactions around the world and can read books\nThief - Gains more damage as the game goes on\n\n\n\n\n\n\n\n\n\n\n\nClasses\n\n\n\n\n\n\n\nBossfight\n\n\n\n\n\n\n\n\n\nDice\n\n\n\n\n\n\n\nCombat"
+  }
+]
