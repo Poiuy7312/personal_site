@@ -2,7 +2,7 @@
 title: "Home"
 ---
 
-<img class="avatar" src="/images/IMG_8566 (1).jpg" alt="a" style=avatar width=60% align="left" />
+<img class="avatar" src="/images/IMG_8566 (1).jpg" alt="a" style=avatar width=60% align="left"/>
 
 <h2 style="border-bottom: none;">Description</h2>
 
