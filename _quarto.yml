@@ -8,9 +8,9 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: FB.qmd
-        text: Software Engineering Projects
-      - href: DB.qmd
+      - href: blog.qmd
+        text: Blog
+      - href: art.qmd
         text: Art
 
 format:

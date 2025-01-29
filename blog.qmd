@@ -1,11 +1,11 @@
 ---
-title: "Software Engineering Projects"
+title: "Blog"
 listing:
   contents: projects
   sort: "date desc"
   type: default
-  categories: true
   sort-ui: false
   filter-ui: false
+  categories: true
 page-layout: full
 ---

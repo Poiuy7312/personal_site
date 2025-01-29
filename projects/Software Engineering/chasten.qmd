@@ -13,7 +13,7 @@ Which will then display a textual app the code for which is in the **configApp.p
 
 ### App Example
 
-![Textual](../images/Textual.png)
+![Textual](/images/Textual.png)
 
 It will also prompt for an API key if one has not been given already just through a terminal input which it will then store an encrypted version into a text file using fernet.
 
@@ -23,6 +23,6 @@ It then displays the checks and sends the information to chatGPT and gets the re
 
 ### Output Example
 
-![image_2023-11-21_150812765](../images/output.png)
+![image_2023-11-21_150812765](/images/output.png)
 
 [Chasten](https://github.com/AstuteSource/chasten)

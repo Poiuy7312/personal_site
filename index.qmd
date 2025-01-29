@@ -2,14 +2,20 @@
 title: "Home"
 ---
 
-<img class="avatar" src="/images/IMG_8566 (1).jpg" alt="a" style=avatar width=50% align="left" />
+<img class="avatar" src="/images/IMG_8566 (1).jpg" alt="a" style=avatar width=60% align="left" />
 
 <h2 style="border-bottom: none;">Description</h2>
 
 I'm a Software Engineering Major and Art,Science and Innovation Minor at Allegheny College class of 2026. I hope to work in the video game industry which spurred my interest in computers. I also like to Make digital Collages in Photoshop and Illustrator which are normally inspired by video games or movies.
 
+#### Interests:
 
-<h2 style="border-bottom: none;">Personal Information</h2>
+    - Ultimate Frisbee
+    - Video games
+    - Sci-fi and Fantasy Movies
+    - Board games
+
+### Personal Information
 
 **Email:** pjs075637@gmail.com
 
@@ -18,7 +24,13 @@ I'm a Software Engineering Major and Art,Science and Innovation Minor at Alleghe
 [<img src="/images/Octicons-mark-github.webp" alt="github logo" style="width:30px;"/>](https://github.com/Poiuy7312)
 
 
+## Skills
 
-<h2 width=100% style="border-bottom: none;">Resume</h2>
+- **Programming Languages:** Rust, Python, Java, HTML and CSS
+- **Adobe Suite:** Photoshop, Illustrator, Premier and Bridge
+
+
+
+## Resume
 
 <iframe src="Files/Preston J. Smith Resume.pdf" margin=5% width="100%" height="500px"></iframe>
