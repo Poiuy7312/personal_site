@@ -10,6 +10,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/projects/Software Engineering/log_analyzer.html",
       "/projects/Software Engineering/rust_password.html",
       "/projects/Game Design/tag.html",
       "/projects/Software Engineering/chasten.html",

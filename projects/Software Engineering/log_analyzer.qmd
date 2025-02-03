@@ -1,0 +1,39 @@
+---
+title: "Log Analyzer"
+author: "Preston Smith"
+description: Analyzes and plots data from log files. based in rust
+date: "2025-2-3"
+---
+
+
+## Description
+This is a program that reads a log file in a the standard format. It then counts the users, errors, total number of logs, bytes transferred and avg bytes transferred. Currently a work in progress
+
+## Features
+
+### Cumulative vs Time:
+
+#### Cumulative
+
+>Cumulative means you can choose two different data points in compare i.e. total logs and errors. it adds them together cumulatively and currently tracks it every minute by default.
+
+##### Cumulative Plot:
+
+![cplot](/images/2.7.png)
+
+
+#### Time
+
+> Time tracks one specified point of data over a specified period i.e. errors per hour or avg bytes per hour.
+
+### Display different plots
+
+Currently only one plot can be made at a time you can chose the x and y axis or if you just want to track something based on time then you pick the y axis.
+
+##### Sort by Time:
+
+Currently the logs can be sorted by second up to year. For example if you want to sort them by an hour then the graph the results will have points of data that have been collected over an hour. The data given will be errors occurred with in the hour, avg bytes transferred by hour. 
+
+##### Time Plot:
+
+![plot](/images/2.6.png)

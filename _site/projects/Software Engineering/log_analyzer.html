@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Preston Smith">
+<meta name="dcterms.date" content="2025-02-03">
+<meta name="description" content="Analyzes and plots data from log files. based in rust">
 
-<title>Blog – Preston Smith</title>
+<title>Log Analyzer – Preston Smith</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-502d5e4135f7ab3a6f8a6ee957fe006c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-502d5e4135f7ab3a6f8a6ee957fe006c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,67 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +81,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Preston Smith</span>
     </a>
   </div>
@@ -149,15 +92,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./art.html"> 
+    <a class="nav-link" href="../../art.html"> 
 <span class="menu-text">Art</span></a>
   </li>  
 </ul>
@@ -168,25 +111,56 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="R2FtZSUyMERlc2lnbg==">Game Design <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U29mdHdhcmUlMjBFbmdpbmVlcmluZw==">Software Engineering <span class="quarto-category-count">(3)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#description" id="toc-description" class="nav-link active" data-scroll-target="#description">Description</a></li>
+  <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">Features</a>
+  <ul class="collapse">
+  <li><a href="#cumulative-vs-time" id="toc-cumulative-vs-time" class="nav-link" data-scroll-target="#cumulative-vs-time">Cumulative vs Time:</a></li>
+  <li><a href="#display-different-plots" id="toc-display-different-plots" class="nav-link" data-scroll-target="#display-different-plots">Display different plots</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Log Analyzer</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Software Engineering</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Analyzes and plots data from log files. based in rust
+  </div>
 </div>
 
 
+<div class="quarto-title-meta">
 
-<div class="quarto-title-meta column-page-left">
-
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Preston Smith </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 3, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -196,182 +170,58 @@ window.Quarto = {
 </header>
 
 
+<section id="description" class="level2">
+<h2 class="anchored" data-anchor-id="description">Description</h2>
+<p>This is a program that reads a log file in a the standard format. It then counts the users, errors, total number of logs, bytes transferred and avg bytes transferred. Currently a work in progress</p>
+</section>
+<section id="features" class="level2">
+<h2 class="anchored" data-anchor-id="features">Features</h2>
+<section id="cumulative-vs-time" class="level3">
+<h3 class="anchored" data-anchor-id="cumulative-vs-time">Cumulative vs Time:</h3>
+<section id="cumulative" class="level4">
+<h4 class="anchored" data-anchor-id="cumulative">Cumulative</h4>
+<blockquote class="blockquote">
+<p>Cumulative means you can choose two different data points in compare i.e.&nbsp;total logs and errors. it adds them together cumulatively and currently tracks it every minute by default.</p>
+</blockquote>
+<section id="cumulative-plot" class="level5">
+<h5 class="anchored" data-anchor-id="cumulative-plot">Cumulative Plot:</h5>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/2.7.png" class="img-fluid figure-img"></p>
+<figcaption>cplot</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="time" class="level4">
+<h4 class="anchored" data-anchor-id="time">Time</h4>
+<blockquote class="blockquote">
+<p>Time tracks one specified point of data over a specified period i.e.&nbsp;errors per hour or avg bytes per hour.</p>
+</blockquote>
+</section>
+</section>
+<section id="display-different-plots" class="level3">
+<h3 class="anchored" data-anchor-id="display-different-plots">Display different plots</h3>
+<p>Currently only one plot can be made at a time you can chose the x and y axis or if you just want to track something based on time then you pick the y axis.</p>
+<section id="sort-by-time" class="level5">
+<h5 class="anchored" data-anchor-id="sort-by-time">Sort by Time:</h5>
+<p>Currently the logs can be sorted by second up to year. For example if you want to sort them by an hour then the graph the results will have points of data that have been collected over an hour. The data given will be errors occurred with in the hour, avg bytes transferred by hour.</p>
+</section>
+<section id="time-plot" class="level5">
+<h5 class="anchored" data-anchor-id="time-plot">Time Plot:</h5>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/2.6.png" class="img-fluid figure-img"></p>
+<figcaption>plot</figcaption>
+</figure>
+</div>
 
 
+</section>
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="U29mdHdhcmUlMjBFbmdpbmVlcmluZw==" data-listing-date-sort="1738558800000" data-listing-file-modified-sort="1738603664579" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="188">
-<div class="thumbnail">
-<p><a href="./projects/Software Engineering/log_analyzer.html" class="no-external"></a></p><a href="./projects/Software Engineering/log_analyzer.html" class="no-external">
-<p class="card-img-top"><img src="images/2.7.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./projects/Software Engineering/log_analyzer.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/Software Engineering/log_analyzer.html" class="no-external">Log Analyzer</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/Software Engineering/log_analyzer.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmUlMjBFbmdpbmVlcmluZw=='); return false;">
-Software Engineering
-</div>
-</div>
-<div class="listing-description">
-<a href="./projects/Software Engineering/log_analyzer.html" class="no-external">Analyzes and plots data from log files. based in rust</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/Software Engineering/log_analyzer.html" class="no-external">
-<div class="listing-date">
-Feb 3, 2025
-</div>
-<div class="listing-author">
-Preston Smith
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="U29mdHdhcmUlMjBFbmdpbmVlcmluZw==" data-listing-date-sort="1733288400000" data-listing-file-modified-sort="1738097887525" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="157">
-<div class="thumbnail">
-<p><a href="./projects/Software Engineering/rust_password.html" class="no-external"></a></p><a href="./projects/Software Engineering/rust_password.html" class="no-external">
-<p class="card-img-top"><img src="images/Password_Check.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./projects/Software Engineering/rust_password.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/Software Engineering/rust_password.html" class="no-external">Rust based Password Checker and Authenticator</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/Software Engineering/rust_password.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmUlMjBFbmdpbmVlcmluZw=='); return false;">
-Software Engineering
-</div>
-</div>
-<div class="listing-description">
-<a href="./projects/Software Engineering/rust_password.html" class="no-external">Stores usernames and passwords and with end to end encryption between a simple server and client.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/Software Engineering/rust_password.html" class="no-external">
-<div class="listing-date">
-Dec 4, 2024
-</div>
-<div class="listing-author">
-Preston Smith
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="R2FtZSUyMERlc2lnbg==" data-listing-date-sort="1728100800000" data-listing-file-modified-sort="1738097622555" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2782">
-<div class="thumbnail">
-<p><a href="./projects/Game Design/tag.html" class="no-external"></a></p><a href="./projects/Game Design/tag.html" class="no-external">
-<p class="card-img-top"><img src="images/Tag.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./projects/Game Design/tag.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/Game Design/tag.html" class="no-external">Tag Game</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/Game Design/tag.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R2FtZSUyMERlc2lnbg=='); return false;">
-Game Design
-</div>
-</div>
-<div class="listing-description">
-<a href="./projects/Game Design/tag.html" class="no-external">A simple pygame where you run away from the AI chasing you.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/Game Design/tag.html" class="no-external">
-<div class="listing-date">
-Oct 5, 2024
-</div>
-<div class="listing-author">
-Preston Smith
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="U29mdHdhcmUlMjBFbmdpbmVlcmluZw==" data-listing-date-sort="1694750400000" data-listing-file-modified-sort="1738097879235" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="176">
-<div class="thumbnail">
-<p><a href="./projects/Software Engineering/chasten.html" class="no-external"></a></p><a href="./projects/Software Engineering/chasten.html" class="no-external">
-<p class="card-img-top"><img src="images/Textual.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./projects/Software Engineering/chasten.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/Software Engineering/chasten.html" class="no-external">Chasten</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/Software Engineering/chasten.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmUlMjBFbmdpbmVlcmluZw=='); return false;">
-Software Engineering
-</div>
-</div>
-<div class="listing-description">
-<a href="./projects/Software Engineering/chasten.html" class="no-external">Checks for patterns in codes using x-path expressions</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/Software Engineering/chasten.html" class="no-external">
-<div class="listing-date">
-Sep 15, 2023
-</div>
-<div class="listing-author">
-Preston Smith
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="R2FtZSUyMERlc2lnbg==" data-listing-date-sort="1683604800000" data-listing-file-modified-sort="1738097621955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="102">
-<div class="thumbnail">
-<p><a href="./projects/Game Design/Golem.html" class="no-external"></a></p><a href="./projects/Game Design/Golem.html" class="no-external">
-<p class="card-img-top"><img src="images/Class_screen.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./projects/Game Design/Golem.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/Game Design/Golem.html" class="no-external">Golem</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/Game Design/Golem.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R2FtZSUyMERlc2lnbg=='); return false;">
-Game Design
-</div>
-</div>
-<div class="listing-description">
-<a href="./projects/Game Design/Golem.html" class="no-external">Web-based game made in twine for a college project</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/Game Design/Golem.html" class="no-external">
-<div class="listing-date">
-May 9, 2023
-</div>
-<div class="listing-author">
-Preston Smith
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
