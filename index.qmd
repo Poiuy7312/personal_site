@@ -34,3 +34,5 @@ I'm a Software Engineering Major and Art,Science and Innovation Minor at Alleghe
 ## Resume
 
 <iframe src="Files/Preston J. Smith Resume.pdf" margin=5% width="100%" height="500px"></iframe>
+
+[Resume](/Files/Preston%20J.%20Smith%20Resume.pdf)
