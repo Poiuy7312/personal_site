@@ -37,3 +37,6 @@ Currently the logs can be sorted by second up to year. For example if you want t
 ##### Time Plot:
 
 ![plot](/images/2.6.png)
+
+
+[Log Analyzer](https://github.com/Poiuy7312/log_analyzer)
