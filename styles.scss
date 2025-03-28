@@ -1,0 +1,117 @@
+/*-- scss:uses --*/
+
+
+@media (min-width: 700px) {
+    body {
+        width: 100vw;
+        margin: 5%;
+    }
+
+    div.quarto-about-trestles {
+        background-color: black;
+        border-bottom: .4vh solid #570054;
+        box-shadow: 0px .25vh #ff00cc;
+        padding: 20%;
+        color: white;
+    }
+
+    #quarto-content {
+        background-color: white;
+        margin-top: 0%;
+        padding: 5%;
+    }
+
+    #quarto-document-content {
+        background-color: white;
+    }
+
+    #skills>div.quarto-layout-panel {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+
+
+    #skills>div.quarto-layout-panel>div>div>p>img {
+        width: 100%;
+    }
+
+    #skills>div.quarto-layout-panel>div:nth-child(2) {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    body {
+        width: 100vw;
+        margin: 5%;
+    }
+
+    div.quarto-about-trestles {
+        background-color: black;
+        border-bottom: .4vh solid #570054;
+        box-shadow: 0px .25vh #ff00cc;
+        justify-content: stretch;
+        padding: 5%;
+        color: white;
+    }
+
+    #quarto-content>div.quarto-about-trestles>div.about-entity {
+        padding: 0px !important;
+    }
+
+
+    #quarto-content {
+        background-color: white;
+        margin-top: 0%;
+        padding: 5%;
+    }
+
+    #quarto-document-content {
+        background-color: white;
+    }
+
+    #skills>div.quarto-layout-panel {
+        width: 100%;
+    }
+
+    #skills>div.quarto-layout-panel>div {
+        width: 100%;
+        flex-direction: row !important;
+    }
+
+
+
+    #skills>div.quarto-layout-panel>div>div>p>img {
+        width: 100%;
+    }
+
+    #skills>div.quarto-layout-panel>div:nth-child(2)>div>p>img {
+        max-width: 100%;
+    }
+
+    #skills>div.quarto-layout-panel>div:nth-child(1)>div>p>img {
+        max-width: 100%;
+    }
+
+
+
+    #quarto-content>div.grid>div.g-col-8 {
+        width: 100vw;
+        padding: 3%;
+    }
+
+    #quarto-content>div.grid>div:nth-child(1) {
+        display: none;
+    }
+
+    #quarto-content>div.grid>div:nth-child(3) {
+        display: none;
+    }
+
+
+}
