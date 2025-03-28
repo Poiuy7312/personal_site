@@ -1,9 +1,13 @@
 /* css styles */
-.avatar {
-    border-radius: 8%;
-    margin-right: 5%;
+
+body {
+    width: 100vw;
+    background-color: linear-gradient(#000000 #FFFFFF);
 }
 
-iframe {
-    margin-top: 5%;
+div.quarto-about-trestles {
+    background-color: black;
+    border-bottom: .4vh solid #991515;
+    box-shadow: 0px .25vh #FF2121;
+    color: white;
 }

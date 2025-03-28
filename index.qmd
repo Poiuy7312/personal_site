@@ -1,38 +1,86 @@
 ---
-title: "Home"
+title: "Preston Smith"
+toc: false
+style: styles.scss
+page-layout: custom
+
+about:
+ id: hero-heading
+ template: trestles
+ image: images/IMG_8566.jpg
+ links:
+  - icon: github
+    text: Github
+    href: https://github.com/Poiuy7312
+  - icon: linkedin
+    text: linkedin
+    href: https://www.linkedin.com/in/preston-smith-5a889134a/
+
+listing:
+  contents: projects
+  id: recent
+  sort: "date desc"
+  sort-ui: false
+  filter-ui: false
+  type: table
+  max-items: 3
 ---
 
-<img class="avatar" src="/images/IMG_8566 (1).jpg" alt="a" style=avatar width=60% align="left"/>
+:::{#hero-heading}
 
-<h2 style="border-bottom: none;">Description</h2>
+## About Me
 
-I'm a Software Engineering Major and Art,Science and Innovation Minor at Allegheny College class of 2026. I hope to work in the video game industry which spurred my interest in computers. I also like to Make digital Collages in Photoshop and Illustrator which are normally inspired by video games or movies.
+Description I'm a Software Engineering Major and Art,Science and Innovation Minor at Allegheny College class of 2026. I hope to work in the video game industry which spurred my interest in computers.I also like to Make digital Collages in Photoshop and Illustrator which are normally inspired by videogames or movies
 
-#### Interests:
+## Education
 
-    - Ultimate Frisbee
-    - Video games
-    - Sci-fi and Fantasy Movies
-    - Board games
+**Highschool:** Pittsburgh Science and Technology Academy *(2018-2022)*
 
-### Personal Information
-
-**Email:** pjs075637@gmail.com
-
-**Phone:** 412-952-6329
-
-[<img src="/images/Octicons-mark-github.webp" alt="github logo" style="width:30px;"/>](https://github.com/Poiuy7312)
+**College:** Allegheny Collage *(2022-2026)*
 
 
+
+
+:::
+
+:::grid
+
+:::{.g-col-2}
+:::
+
+:::{.g-col-8}
 ## Skills
 
-- **Programming Languages:** Rust, Python, Java, HTML and CSS
-- **Adobe Suite:** Photoshop, Illustrator, Premier and Bridge
+
+::: {layout="[[1,1,1,1,1] , [1,1,1,1]]"}
+
+![](images/Rust_programming_language_black_logo.svg)
+
+![](images/Python-logo-notext.svg)
+
+![](images/java-icon.svg)
+
+![](images/HTML5_logo_and_wordmark.svg)
+
+![](images/Official_CSS_Logo.svg)
+
+![](images/Adobe_Photoshop_CC_icon.svg)
+
+![](images/Adobe_Illustrator_CC_icon.svg)
+
+![](images/Adobe_Premiere_Pro_CC_icon.svg)
+
+![](images/Adobe_Bridge_CC_icon.svg)
+
+:::
 
 
+## Recent Posts
 
-## Resume
+<div id='recent'></div>
 
-<iframe src="Files/Preston J. Smith Resume.pdf" margin=5% width="100%" height="500px"></iframe>
+:::
 
-[Resume](/Files/Preston%20J.%20Smith%20Resume.pdf)
+:::{.g-col-2}
+:::
+:::

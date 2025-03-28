@@ -1,14 +1,16 @@
 [
   {
-    "listing": "/FB.html",
+    "listing": "/blog.html",
     "items": [
-      "/projects/rust_password.html",
-      "/projects/chasten.html",
-      "/projects/Golem.html"
+      "/projects/Software Engineering/log_analyzer.html",
+      "/projects/Software Engineering/rust_password.html",
+      "/projects/Game Design/tag.html",
+      "/projects/Software Engineering/chasten.html",
+      "/projects/Game Design/Golem.html"
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/index.html",
     "items": [
       "/projects/Software Engineering/log_analyzer.html",
       "/projects/Software Engineering/rust_password.html",

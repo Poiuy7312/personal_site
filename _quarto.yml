@@ -12,11 +12,26 @@ website:
         text: Blog
       - href: art.qmd
         text: Art
+  page-footer:
+    background: '#EDEAEA'
+    foreground: '#570054'
+    border: 'black'
+    left:
+    - href: index.qmd
+      text: Home
+      
+    right: 
+    - icon: github
+      href: https://github.com/Poiuy7312
+    - icon: linkedin
+      href: https://www.linkedin.com/in/preston-smith-5a889134a/
+
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: 
+      light: [cosmo,styles.scss]
+      dark: [cosmo,styles.scss]
     toc: true
 
 
