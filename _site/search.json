@@ -1,115 +1,24 @@
 [
   {
-    "objectID": "index.html#contact-information",
-    "href": "index.html#contact-information",
-    "title": "Home",
+    "objectID": "projects/Software Engineering/log_analyzer.html",
+    "href": "projects/Software Engineering/log_analyzer.html",
+    "title": "Log Analyzer",
     "section": "",
-    "text": "Email: pjs075637@gmail.com"
+    "text": "This is a program that reads a log file in a the standard format. It then counts the users, errors, total number of logs, bytes transferred and avg bytes transferred. Currently a work in progress"
   },
   {
-    "objectID": "index.html#personal-information",
-    "href": "index.html#personal-information",
-    "title": "Home",
-    "section": "Personal Information",
-    "text": "Personal Information\nEmail: pjs075637@gmail.com\nPhone: 412-952-6329"
-  },
-  {
-    "objectID": "index.html#description",
-    "href": "index.html#description",
-    "title": "Home",
-    "section": "Description",
-    "text": "Description\nI’m a Software Engineering Major and Art,Science and Innovation Minor at Allegheny College class of 2026"
-  },
-  {
-    "objectID": "projects/rust_password.html",
-    "href": "projects/rust_password.html",
-    "title": "Rust based Password Checker and Authenticator",
+    "objectID": "projects/Software Engineering/log_analyzer.html#description",
+    "href": "projects/Software Engineering/log_analyzer.html#description",
+    "title": "Log Analyzer",
     "section": "",
-    "text": "This is a program that takes a username and password and stores it for later use it’s programmed in the rust programming language. This is due to it’s fast compile time and guaranteed memory safety in it’s program. This was mostly a project to create something that simulates password storage between a server and client.\n\nFeatures\n\nExtensive user interface\nCreated passwords must follow certain rules in order to be valid\nStores passwords as a hash using the argon2 hashing algorithm\nEnd to end encryption between the server and client\n\n\n\nExample of TUI\n\n\n\nRatutui\n\n\nThe user interface is made using the rust crate ratatui.\n\n\nHow it works\nThe program communicates with a socket server after the user types in there username and password. It sends the information to the server and gets a response to a server which will either create an account or if the password doesn’t follow rules like must be eight characters and must have a capital letter for example.\nPassword-Check"
+    "text": "This is a program that reads a log file in a the standard format. It then counts the users, errors, total number of logs, bytes transferred and avg bytes transferred. Currently a work in progress"
   },
   {
-    "objectID": "projects/chasten.html",
-    "href": "projects/chasten.html",
-    "title": "Chasten",
-    "section": "",
-    "text": "I mostly worked on trying to implement the program with an LLM to generate x-path expressions to be used. as well as some minor bug fixes\nchasten create-checks\nWhich will then display a textual app the code for which is in the configApp.py file:\n\nApp Example\n\n\n\nTextual\n\n\nIt will also prompt for an API key if one has not been given already just through a terminal input which it will then store an encrypted version into a text file using fernet.\nThe code than takes the inputs given by the user and stores it in a csv file split that information up when then the app is closed and use the write_checks function in configApp.py to format it in way to have consistently formatted inputs to send to chatGPT in an attempt to make the program more consistent.\nIt then displays the checks and sends the information to chatGPT and gets the results which is handled in the createchecks.py file and then displays the results in the terminal and stores it in a YAML file called checks.yml or whatever the user specify.\n\n\nOutput Example\n\n\n\nimage_2023-11-21_150812765\n\n\nChasten"
-  },
-  {
-    "objectID": "projects/Golem.html",
-    "href": "projects/Golem.html",
-    "title": "Golem",
-    "section": "",
-    "text": "Golem is a Twine based adventure game that I developed for one of my classes in college. It’s about a golem that is created by a town who’s only purpose is to serve the town and is punished for disobeying the town.\nGolem"
-  },
-  {
-    "objectID": "index.html#resume",
-    "href": "index.html#resume",
-    "title": "Home",
-    "section": "Resume",
-    "text": "Resume\n\n\nResume"
-  },
-  {
-    "objectID": "projects/Golem.html#description",
-    "href": "projects/Golem.html#description",
-    "title": "Golem",
-    "section": "",
-    "text": "Golem is a Twine based adventure game that I developed for one of my classes in college. It’s about a golem that is created by a town who’s only purpose is to serve the town and is punished for disobeying the town.\nGolem"
-  },
-  {
-    "objectID": "projects/Golem.html#features",
-    "href": "projects/Golem.html#features",
-    "title": "Golem",
+    "objectID": "projects/Software Engineering/log_analyzer.html#features",
+    "href": "projects/Software Engineering/log_analyzer.html#features",
+    "title": "Log Analyzer",
     "section": "Features",
-    "text": "Features\n\nMultiple Boss fights\nShops and Minigames\nRandomized Quests\nTurn based Combat System\nMultiple Endings\nDifferent Classes and play styles\n\nKnight - Regenerates Health\nMage - Has different interactions around the world and can read books\nThief - Gains more damage as the game goes on\n\n\n\n\n\n\n\n\n\n\n\nClasses\n\n\n\n\n\n\n\nBossfight\n\n\n\n\n\n\n\n\n\nDice\n\n\n\n\n\n\n\nCombat"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Log Analyzer\n\n\n\n\n\n\nSoftware Engineering\n\n\n\nAnalyzes and plots data from log files. based in rust\n\n\n\n\n\nFeb 3, 2025\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nRust based Password Checker and Authenticator\n\n\n\n\n\n\nSoftware Engineering\n\n\n\nStores usernames and passwords and with end to end encryption between a simple server and client.\n\n\n\n\n\nDec 4, 2024\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nTag Game\n\n\n\n\n\n\nGame Design\n\n\n\nA simple pygame where you run away from the AI chasing you.\n\n\n\n\n\nOct 5, 2024\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nChasten\n\n\n\n\n\n\nSoftware Engineering\n\n\n\nChecks for patterns in codes using x-path expressions\n\n\n\n\n\nSep 15, 2023\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nGolem\n\n\n\n\n\n\nGame Design\n\n\n\nWeb-based game made in twine for a college project\n\n\n\n\n\nMay 9, 2023\n\n\nPreston Smith\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/tag.html",
-    "href": "projects/tag.html",
-    "title": "Tag Game",
-    "section": "",
-    "text": "This Was a class project turn personal project as I wasn’t really satisfied with the final result. I mostly made the game more visually appealing made it so you didn’t have to rerun the script anytime you died and fixed some bugs with the obstacles.\nThis project was mostly to explore pathfinding in algorithms. I wanted to explore the A* star algorithm in this case and I wanted to make a game that was similar to snake at least in presentation.\n\n\n\nOriginally the game had no obstacles to run into outside the end of the board. This made it no only that A* was slow but also didn’t even come up with a better result than a simple greedy first algorithm. I then added in randomly appearing obstacles and for the most part a greedy algorithm was still better and faster on average. The problem with A* wasn’t that it couldn’t find a path but that it would stop the flow of the game to do it. So my compromise for this was to have the AI to change algorithms depending on the situation. I wanted to achieve two things with this first make it so A* has a purpose in this game as pretty much a final resort. But also I didn’t want to make it so the AI simply chased you so Instead I changed the greedy algorithm to go to the point the player is heading if it’s a certain distance away. It will also only use A* if the player isn’t moving. This made the AI more fun to play against while also allowing to handle certain edge cases better with A*.\n\n\n\n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nTag-game\n\n\n\nThis shows an early state of the game as the game continues more obstacles will appear which are the black squares.\n\n\n\n\n\n\n\nYou are the green square and your goal is to survive as long as possible and in turn earn as many points as possible.\n\nYou lose if the red square catches you\n\n\n\n\nW: Go up A: Go left S: Go down D: Go right\n\nIf you’ve ever played snake it moves very similar where you go in the direction of key you press until you specify otherwise.\n\n\n\n\n\n\n\nThe game generates a board of forty by forty with the starting location of the player being opposite of each other. Everything in this game is coordinate based and stores obstacles coordinates, player coordinates and enemy coordinates and changes the color of the associated square depending on those locations\n  tile_size = width / board_size\n        tile_origin = (0, 0)\n        tiles = []\n        for i in range(board_size):\n            row = []\n            for j in range(board_size):\n                rect = pygame.Rect(\n                    tile_origin[0] + j * tile_size,\n                    tile_origin[1] + i * tile_size,\n                    tile_size,\n                    tile_size,\n                )\n                if (i, j) == user.location:\n                    # Draw Player character\n                    pygame.draw.rect(screen, \"green\", rect)\n                elif (i, j) == enemy.location:\n                    # Draw Enemy\n                    pygame.draw.rect(screen, \"red\", rect)\n                elif (i, j) in obstacles:\n                    # Draw Obstacle\n                    pygame.draw.rect(screen, \"black\", rect)\n                else:\n                    pygame.draw.rect(screen, \"orange\", rect, 1)\n                row.append(rect)\n            tiles.append(row)\n\n\n\nThe player is a class and is the simplest part of the program it has a location and direction.\n\nLocation: Current location of player\nDirection: Direction player is currently moving\n\nAll the program does is respond to key presses and changes the direction and location accordingly.\nclass player:\n    def __init__(self, location: Tuple[int, int], direction: str | None):\n        self.location = location\n        self.direction = direction\n\n    def move_player(self, obstacles) -&gt; bool:\n        \"\"\"Changes player coordinates depending on current direction.\"\"\"\n        result = None\n        if self.direction == \"Up\" and self.location[0] &gt; 0:\n            result = (self.location[0] - 1, self.location[1])\n        elif self.direction == \"Down\" and self.location[0] &lt; 40:\n            result = (self.location[0] + 1, self.location[1])\n        elif self.direction == \"Left\" and self.location[1] &gt; 0:\n            result = (self.location[0], self.location[1] - 1)\n        elif self.direction == \"Right\" and self.location[1] &lt; 40:\n            result = (self.location[0], self.location[1] + 1)\n        if result != None and result not in obstacles:\n            self.location = result\n            return True\n        self.location = self.location\n        return False\n\n\n\nThe enemy is also a class similar to an enemy however it is much more complex and uses different algorithms to choose it’s next move depending on the location.\n\n\nA* works by assigning a value to each possible moves based on how far away it is from the goal in this case we use manhattan distance which is just rise + run. It will make an estimate on how many moves it should take and will calculate it’s path based on that however if it runs into a move that would get it closer but is not possible due to some other factor it will recalculate and try the current move that as the lowest value.\ndef pathfinder(\n        self, obstacles, start: Tuple[int], goal: Tuple[int]\n    ) -&gt; Tuple[int, int]:\n        # A* pathfinding algorithm to find the best path from start to goal\n        if not Path(self.filename).exists() or Path(self.filename).stat().st_size == 0:\n            open_list = []  # List of nodes to explore\n            closed_list = set()  # Set of explored nodes\n            start_node = Node(start, None, 0, self.distance_from_player(start, goal))\n            heapq.heappush(open_list, start_node)  # Add the start node to the open list\n\n            while open_list:\n                current_node = heapq.heappop(\n                    open_list\n                )  # Get the node with the lowest f cost\n                if current_node.position == goal:\n                    path = self.reconstruct_path(\n                        current_node\n                    )  # Reconstruct path if goal is reached\n                    with open(self.filename, \"w\") as fh:\n                        for p in path:\n                            fh.write(f\"{p}\\n\")  # Write path to file\n                    break\n\n                closed_list.add(\n                    current_node.position\n                )  # Mark the current node as explored\n                neighbors = self.possible_moves(\n                    current_node.position, obstacles\n                )  # Get valid neighbors\n                for next_position in neighbors:\n                    if next_position in closed_list:\n                        continue  # Skip if the neighbor has already been explored\n                    assert (\n                        next_position not in closed_list\n                    )  # Ensure neighbor is not in closed list\n                    g_cost = current_node.g + 1  # Increment cost from the start\n                    h_cost = self.distance_from_player(\n                        next_position, goal\n                    )  # Heuristic cost\n                    next_node = Node(next_position, current_node, g_cost, h_cost)\n\n                    if self.add_to_open(open_list, next_node):\n                        heapq.heappush(\n                            open_list, next_node\n                        )  # Add to open list if it's a better path\n\n\n\nGreedy search is much simpler and is used most of the time in this program. All it does is check all the possible moves which at most is four at one time and if it gets closer to the player then it will do that and if theres multiple that get closer it will randomly choose one.\n if self.location != goal:  # If the enemy is not at the goal\n            for move in moves:\n                new_dist = self.distance_from_player(\n                    move, goal\n                )  # Calculate new distance to goal\n                if new_dist &lt; current_distance:\n                    current_distance = new_dist  # Update current distance if closer\n                    best_moves.add(move)  # Add to best moves\n                else:\n                    bad_moves.add(move)  # Add to bad moves\n\n            # Choose the best move if available\n            if moving:\n                if best_moves:\n                    self.location = random.choice(\n                        list(best_moves)\n                    )  # Move to a best move\n                    if os.path.exists(self.filename):\n                        os.remove(self.filename)  # Remove path file\n                    return None\n\n                else:\n                    black_list = self.location\n                    self.location = random.choice(\n                        list(bad_moves)\n                    )  # Move to a random bad move if no best options"
-  },
-  {
-    "objectID": "projects/tag.html#display",
-    "href": "projects/tag.html#display",
-    "title": "Tag Game",
-    "section": "",
-    "text": "Title\n\n\n\n\n\n\n\n\nTag-game\n\n\n\nThis shows an early state of the game as the game continues more obstacles will appear which are the black squares."
-  },
-  {
-    "objectID": "projects/tag.html#game-play",
-    "href": "projects/tag.html#game-play",
-    "title": "Tag Game",
-    "section": "",
-    "text": "You are the green square and your goal is to survive as long as possible and in turn earn as many points as possible.\n\nYou lose if the red square catches you\n\n\n\n\nW: Go up A: Go left S: Go down D: Go right\n\nIf you’ve ever played snake it moves very similar where you go in the direction of key you press until you specify otherwise."
-  },
-  {
-    "objectID": "projects/tag.html#how-it-works",
-    "href": "projects/tag.html#how-it-works",
-    "title": "Tag Game",
-    "section": "",
-    "text": "The game generates a board of forty by forty with the starting location of the player being opposite of each other. Everything in this game is coordinate based and stores obstacles coordinates, player coordinates and enemy coordinates and changes the color of the associated square depending on those locations\n  tile_size = width / board_size\n        tile_origin = (0, 0)\n        tiles = []\n        for i in range(board_size):\n            row = []\n            for j in range(board_size):\n                rect = pygame.Rect(\n                    tile_origin[0] + j * tile_size,\n                    tile_origin[1] + i * tile_size,\n                    tile_size,\n                    tile_size,\n                )\n                if (i, j) == user.location:\n                    # Draw Player character\n                    pygame.draw.rect(screen, \"green\", rect)\n                elif (i, j) == enemy.location:\n                    # Draw Enemy\n                    pygame.draw.rect(screen, \"red\", rect)\n                elif (i, j) in obstacles:\n                    # Draw Obstacle\n                    pygame.draw.rect(screen, \"black\", rect)\n                else:\n                    pygame.draw.rect(screen, \"orange\", rect, 1)\n                row.append(rect)\n            tiles.append(row)\n\n\n\nThe player is a class and is the simplest part of the program it has a location and direction.\n\nLocation: Current location of player\nDirection: Direction player is currently moving\n\nAll the program does is respond to key presses and changes the direction and location accordingly.\nclass player:\n    def __init__(self, location: Tuple[int, int], direction: str | None):\n        self.location = location\n        self.direction = direction\n\n    def move_player(self, obstacles) -&gt; bool:\n        \"\"\"Changes player coordinates depending on current direction.\"\"\"\n        result = None\n        if self.direction == \"Up\" and self.location[0] &gt; 0:\n            result = (self.location[0] - 1, self.location[1])\n        elif self.direction == \"Down\" and self.location[0] &lt; 40:\n            result = (self.location[0] + 1, self.location[1])\n        elif self.direction == \"Left\" and self.location[1] &gt; 0:\n            result = (self.location[0], self.location[1] - 1)\n        elif self.direction == \"Right\" and self.location[1] &lt; 40:\n            result = (self.location[0], self.location[1] + 1)\n        if result != None and result not in obstacles:\n            self.location = result\n            return True\n        self.location = self.location\n        return False\n\n\n\nThe enemy is also a class similar to an enemy however it is much more complex and uses different algorithms to choose it’s next move depending on the location.\n\n\nA* works by assigning a value to each possible moves based on how far away it is from the goal in this case we use manhattan distance which is just rise + run. It will make an estimate on how many moves it should take and will calculate it’s path based on that however if it runs into a move that would get it closer but is not possible due to some other factor it will recalculate and try the current move that as the lowest value.\ndef pathfinder(\n        self, obstacles, start: Tuple[int], goal: Tuple[int]\n    ) -&gt; Tuple[int, int]:\n        # A* pathfinding algorithm to find the best path from start to goal\n        if not Path(self.filename).exists() or Path(self.filename).stat().st_size == 0:\n            open_list = []  # List of nodes to explore\n            closed_list = set()  # Set of explored nodes\n            start_node = Node(start, None, 0, self.distance_from_player(start, goal))\n            heapq.heappush(open_list, start_node)  # Add the start node to the open list\n\n            while open_list:\n                current_node = heapq.heappop(\n                    open_list\n                )  # Get the node with the lowest f cost\n                if current_node.position == goal:\n                    path = self.reconstruct_path(\n                        current_node\n                    )  # Reconstruct path if goal is reached\n                    with open(self.filename, \"w\") as fh:\n                        for p in path:\n                            fh.write(f\"{p}\\n\")  # Write path to file\n                    break\n\n                closed_list.add(\n                    current_node.position\n                )  # Mark the current node as explored\n                neighbors = self.possible_moves(\n                    current_node.position, obstacles\n                )  # Get valid neighbors\n                for next_position in neighbors:\n                    if next_position in closed_list:\n                        continue  # Skip if the neighbor has already been explored\n                    assert (\n                        next_position not in closed_list\n                    )  # Ensure neighbor is not in closed list\n                    g_cost = current_node.g + 1  # Increment cost from the start\n                    h_cost = self.distance_from_player(\n                        next_position, goal\n                    )  # Heuristic cost\n                    next_node = Node(next_position, current_node, g_cost, h_cost)\n\n                    if self.add_to_open(open_list, next_node):\n                        heapq.heappush(\n                            open_list, next_node\n                        )  # Add to open list if it's a better path\n\n\n\nGreedy search is much simpler and is used most of the time in this program. All it does is check all the possible moves which at most is four at one time and if it gets closer to the player then it will do that and if theres multiple that get closer it will randomly choose one.\n if self.location != goal:  # If the enemy is not at the goal\n            for move in moves:\n                new_dist = self.distance_from_player(\n                    move, goal\n                )  # Calculate new distance to goal\n                if new_dist &lt; current_distance:\n                    current_distance = new_dist  # Update current distance if closer\n                    best_moves.add(move)  # Add to best moves\n                else:\n                    bad_moves.add(move)  # Add to bad moves\n\n            # Choose the best move if available\n            if moving:\n                if best_moves:\n                    self.location = random.choice(\n                        list(best_moves)\n                    )  # Move to a best move\n                    if os.path.exists(self.filename):\n                        os.remove(self.filename)  # Remove path file\n                    return None\n\n                else:\n                    black_list = self.location\n                    self.location = random.choice(\n                        list(bad_moves)\n                    )  # Move to a random bad move if no best options"
-  },
-  {
-    "objectID": "projects/tag.html#background",
-    "href": "projects/tag.html#background",
-    "title": "Tag Game",
-    "section": "",
-    "text": "This Was a class project turn personal project as I wasn’t really satisfied with the final result. I mostly made the game more visually appealing made it so you didn’t have to rerun the script anytime you died and fixed some bugs with the obstacles.\n\n\nThis project was mostly to explore pathfinding in algorithms. I wanted to explore the A* star algorithm in this case and I wanted to make a game that was similar to snake at least in presentation.\n\n\n\nOriginally the game had no obstacles to run into outside the end of the board. This made it no only that A* was slow but also didn’t even come up with a better result than a simple greedy first algorithm."
-  },
-  {
-    "objectID": "projects/tag.html#description",
-    "href": "projects/tag.html#description",
-    "title": "Tag Game",
-    "section": "",
-    "text": "This Was a class project turn personal project as I wasn’t really satisfied with the final result. I mostly made the game more visually appealing made it so you didn’t have to rerun the script anytime you died and fixed some bugs with the obstacles.\nThis project was mostly to explore pathfinding in algorithms. I wanted to explore the A* star algorithm in this case and I wanted to make a game that was similar to snake at least in presentation.\n\n\n\nOriginally the game had no obstacles to run into outside the end of the board. This made it no only that A* was slow but also didn’t even come up with a better result than a simple greedy first algorithm. I then added in randomly appearing obstacles and for the most part a greedy algorithm was still better and faster on average. The problem with A* wasn’t that it couldn’t find a path but that it would stop the flow of the game to do it. So my compromise for this was to have the AI to change algorithms depending on the situation. I wanted to achieve two things with this first make it so A* has a purpose in this game as pretty much a final resort. But also I didn’t want to make it so the AI simply chased you so Instead I changed the greedy algorithm to go to the point the player is heading if it’s a certain distance away. It will also only use A* if the player isn’t moving. This made the AI more fun to play against while also allowing to handle certain edge cases better with A*."
+    "text": "Features\n\nCumulative vs Time:\n\nCumulative\n\nCumulative means you can choose two different data points in compare i.e. total logs and errors. it adds them together cumulatively and currently tracks it every minute by default.\n\n\nCumulative Plot:\n\n\n\ncplot\n\n\n\n\n\nTime\n\nTime tracks one specified point of data over a specified period i.e. errors per hour or avg bytes per hour.\n\n\n\n\nDisplay different plots\nCurrently only one plot can be made at a time you can chose the x and y axis or if you just want to track something based on time then you pick the y axis.\n\nSort by Time:\nCurrently the logs can be sorted by second up to year. For example if you want to sort them by an hour then the graph the results will have points of data that have been collected over an hour. The data given will be errors occurred with in the hour, avg bytes transferred by hour.\n\n\nTime Plot:\n\n\n\nplot\n\n\nLog Analyzer"
   },
   {
     "objectID": "projects/Software Engineering/chasten.html",
@@ -154,6 +63,41 @@
     "text": "The game generates a board of forty by forty with the starting location of the player being opposite of each other. Everything in this game is coordinate based and stores obstacles coordinates, player coordinates and enemy coordinates and changes the color of the associated square depending on those locations\n  tile_size = width / board_size\n        tile_origin = (0, 0)\n        tiles = []\n        for i in range(board_size):\n            row = []\n            for j in range(board_size):\n                rect = pygame.Rect(\n                    tile_origin[0] + j * tile_size,\n                    tile_origin[1] + i * tile_size,\n                    tile_size,\n                    tile_size,\n                )\n                if (i, j) == user.location:\n                    # Draw Player character\n                    pygame.draw.rect(screen, \"green\", rect)\n                elif (i, j) == enemy.location:\n                    # Draw Enemy\n                    pygame.draw.rect(screen, \"red\", rect)\n                elif (i, j) in obstacles:\n                    # Draw Obstacle\n                    pygame.draw.rect(screen, \"black\", rect)\n                else:\n                    pygame.draw.rect(screen, \"orange\", rect, 1)\n                row.append(rect)\n            tiles.append(row)\n\n\n\nThe player is a class and is the simplest part of the program it has a location and direction.\n\nLocation: Current location of player\nDirection: Direction player is currently moving\n\nAll the program does is respond to key presses and changes the direction and location accordingly.\nclass player:\n    def __init__(self, location: Tuple[int, int], direction: str | None):\n        self.location = location\n        self.direction = direction\n\n    def move_player(self, obstacles) -&gt; bool:\n        \"\"\"Changes player coordinates depending on current direction.\"\"\"\n        result = None\n        if self.direction == \"Up\" and self.location[0] &gt; 0:\n            result = (self.location[0] - 1, self.location[1])\n        elif self.direction == \"Down\" and self.location[0] &lt; 40:\n            result = (self.location[0] + 1, self.location[1])\n        elif self.direction == \"Left\" and self.location[1] &gt; 0:\n            result = (self.location[0], self.location[1] - 1)\n        elif self.direction == \"Right\" and self.location[1] &lt; 40:\n            result = (self.location[0], self.location[1] + 1)\n        if result != None and result not in obstacles:\n            self.location = result\n            return True\n        self.location = self.location\n        return False\n\n\n\nThe enemy is also a class similar to an enemy however it is much more complex and uses different algorithms to choose it’s next move depending on the location.\n\n\nA* works by assigning a value to each possible moves based on how far away it is from the goal in this case we use manhattan distance which is just rise + run. It will make an estimate on how many moves it should take and will calculate it’s path based on that however if it runs into a move that would get it closer but is not possible due to some other factor it will recalculate and try the current move that as the lowest value.\ndef pathfinder(\n        self, obstacles, start: Tuple[int], goal: Tuple[int]\n    ) -&gt; Tuple[int, int]:\n        # A* pathfinding algorithm to find the best path from start to goal\n        if not Path(self.filename).exists() or Path(self.filename).stat().st_size == 0:\n            open_list = []  # List of nodes to explore\n            closed_list = set()  # Set of explored nodes\n            start_node = Node(start, None, 0, self.distance_from_player(start, goal))\n            heapq.heappush(open_list, start_node)  # Add the start node to the open list\n\n            while open_list:\n                current_node = heapq.heappop(\n                    open_list\n                )  # Get the node with the lowest f cost\n                if current_node.position == goal:\n                    path = self.reconstruct_path(\n                        current_node\n                    )  # Reconstruct path if goal is reached\n                    with open(self.filename, \"w\") as fh:\n                        for p in path:\n                            fh.write(f\"{p}\\n\")  # Write path to file\n                    break\n\n                closed_list.add(\n                    current_node.position\n                )  # Mark the current node as explored\n                neighbors = self.possible_moves(\n                    current_node.position, obstacles\n                )  # Get valid neighbors\n                for next_position in neighbors:\n                    if next_position in closed_list:\n                        continue  # Skip if the neighbor has already been explored\n                    assert (\n                        next_position not in closed_list\n                    )  # Ensure neighbor is not in closed list\n                    g_cost = current_node.g + 1  # Increment cost from the start\n                    h_cost = self.distance_from_player(\n                        next_position, goal\n                    )  # Heuristic cost\n                    next_node = Node(next_position, current_node, g_cost, h_cost)\n\n                    if self.add_to_open(open_list, next_node):\n                        heapq.heappush(\n                            open_list, next_node\n                        )  # Add to open list if it's a better path\n\n\n\nGreedy search is much simpler and is used most of the time in this program. All it does is check all the possible moves which at most is four at one time and if it gets closer to the player then it will do that and if theres multiple that get closer it will randomly choose one.\n if self.location != goal:  # If the enemy is not at the goal\n            for move in moves:\n                new_dist = self.distance_from_player(\n                    move, goal\n                )  # Calculate new distance to goal\n                if new_dist &lt; current_distance:\n                    current_distance = new_dist  # Update current distance if closer\n                    best_moves.add(move)  # Add to best moves\n                else:\n                    bad_moves.add(move)  # Add to bad moves\n\n            # Choose the best move if available\n            if moving:\n                if best_moves:\n                    self.location = random.choice(\n                        list(best_moves)\n                    )  # Move to a best move\n                    if os.path.exists(self.filename):\n                        os.remove(self.filename)  # Remove path file\n                    return None\n\n                else:\n                    black_list = self.location\n                    self.location = random.choice(\n                        list(bad_moves)\n                    )  # Move to a random bad move if no best options"
   },
   {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Log Analyzer\n\n\n\n\n\n\nSoftware Engineering\n\n\n\nAnalyzes and plots data from log files. based in rust\n\n\n\n\n\nFeb 3, 2025\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nRust based Password Checker and Authenticator\n\n\n\n\n\n\nSoftware Engineering\n\n\n\nStores usernames and passwords and with end to end encryption between a simple server and client.\n\n\n\n\n\nDec 4, 2024\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nTag Game\n\n\n\n\n\n\nGame Design\n\n\n\nA simple pygame where you run away from the AI chasing you.\n\n\n\n\n\nOct 5, 2024\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nChasten\n\n\n\n\n\n\nSoftware Engineering\n\n\n\nChecks for patterns in codes using x-path expressions\n\n\n\n\n\nSep 15, 2023\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nGolem\n\n\n\n\n\n\nGame Design\n\n\n\nWeb-based game made in twine for a college project\n\n\n\n\n\nMay 9, 2023\n\n\nPreston Smith\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Preston Smith",
+    "section": "About Me",
+    "text": "About Me\nDescription I’m a Software Engineering Major and Art,Science and Innovation Minor at Allegheny College class of 2026. I hope to work in the video game industry which spurred my interest in computers.I also like to Make digital Collages in Photoshop and Illustrator which are normally inspired by videogames or movies"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Preston Smith",
+    "section": "Education",
+    "text": "Education\nHighschool: Pittsburgh Science and Technology Academy (2018-2022)\nCollege: Allegheny Collage (2022-2026)"
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "Preston Smith",
+    "section": "Skills",
+    "text": "Skills"
+  },
+  {
+    "objectID": "index.html#recent-posts",
+    "href": "index.html#recent-posts",
+    "title": "Preston Smith",
+    "section": "Recent Posts",
+    "text": "Recent Posts\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nFeb 3, 2025\n\n\nLog Analyzer\n\n\nPreston Smith\n\n\n\n\nDec 4, 2024\n\n\nRust based Password Checker and Authenticator\n\n\nPreston Smith\n\n\n\n\nOct 5, 2024\n\n\nTag Game\n\n\nPreston Smith\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "projects/Game Design/Golem.html",
     "href": "projects/Game Design/Golem.html",
     "title": "Golem",
@@ -180,61 +124,5 @@
     "title": "Rust based Password Checker and Authenticator",
     "section": "",
     "text": "This is a program that takes a username and password and stores it for later use it’s programmed in the rust programming language. This is due to it’s fast compile time and guaranteed memory safety in it’s program. This was mostly a project to create something that simulates password storage between a server and client.\n\nFeatures\n\nExtensive user interface\nCreated passwords must follow certain rules in order to be valid\nStores passwords as a hash using the argon2 hashing algorithm\nEnd to end encryption between the server and client\n\n\n\nExample of TUI\n\n\n\nRatutui\n\n\nThe user interface is made using the rust crate ratatui.\n\n\nHow it works\nThe program communicates with a socket server after the user types in there username and password. It sends the information to the server and gets a response to a server which will either create an account or if the password doesn’t follow rules like must be eight characters and must have a capital letter for example.\nPassword-Check"
-  },
-  {
-    "objectID": "index.html#skills",
-    "href": "index.html#skills",
-    "title": "Preston Smith",
-    "section": "Skills",
-    "text": "Skills"
-  },
-  {
-    "objectID": "projects/Software Engineering/log_analyzer.html",
-    "href": "projects/Software Engineering/log_analyzer.html",
-    "title": "Log Analyzer",
-    "section": "",
-    "text": "This is a program that reads a log file in a the standard format. It then counts the users, errors, total number of logs, bytes transferred and avg bytes transferred. Currently a work in progress"
-  },
-  {
-    "objectID": "projects/Software Engineering/log_analyzer.html#description",
-    "href": "projects/Software Engineering/log_analyzer.html#description",
-    "title": "Log Analyzer",
-    "section": "",
-    "text": "This is a program that reads a log file in a the standard format. It then counts the users, errors, total number of logs, bytes transferred and avg bytes transferred. Currently a work in progress"
-  },
-  {
-    "objectID": "projects/Software Engineering/log_analyzer.html#features",
-    "href": "projects/Software Engineering/log_analyzer.html#features",
-    "title": "Log Analyzer",
-    "section": "Features",
-    "text": "Features\n\nCumulative vs Time:\n\nCumulative\n\nCumulative means you can choose two different data points in compare i.e. total logs and errors. it adds them together cumulatively and currently tracks it every minute by default.\n\n\nCumulative Plot:\n\n\n\ncplot\n\n\n\n\n\nTime\n\nTime tracks one specified point of data over a specified period i.e. errors per hour or avg bytes per hour.\n\n\n\n\nDisplay different plots\nCurrently only one plot can be made at a time you can chose the x and y axis or if you just want to track something based on time then you pick the y axis.\n\nSort by Time:\nCurrently the logs can be sorted by second up to year. For example if you want to sort them by an hour then the graph the results will have points of data that have been collected over an hour. The data given will be errors occurred with in the hour, avg bytes transferred by hour.\n\n\nTime Plot:\n\n\n\nplot\n\n\nLog Analyzer"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Preston Smith",
-    "section": "",
-    "text": "Github\n  \n  \n    \n     linkedin\n  \n\n  \n  \n\n\nDescription I’m a Software Engineering Major and Art,Science and Innovation Minor at Allegheny College class of 2026. I hope to work in the video game industry which spurred my interest in computers.I also like to Make digital Collages in Photoshop and Illustrator which are normally inspired by videogames or movies"
-  },
-  {
-    "objectID": "index.html#recent-posts",
-    "href": "index.html#recent-posts",
-    "title": "Preston Smith",
-    "section": "Recent Posts",
-    "text": "Recent Posts\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nFeb 3, 2025\n\n\nLog Analyzer\n\n\nPreston Smith\n\n\n\n\nDec 4, 2024\n\n\nRust based Password Checker and Authenticator\n\n\nPreston Smith\n\n\n\n\nOct 5, 2024\n\n\nTag Game\n\n\nPreston Smith\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Preston Smith",
-    "section": "About Me",
-    "text": "About Me\nDescription I’m a Software Engineering Major and Art,Science and Innovation Minor at Allegheny College class of 2026. I hope to work in the video game industry which spurred my interest in computers.I also like to Make digital Collages in Photoshop and Illustrator which are normally inspired by videogames or movies"
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Preston Smith",
-    "section": "Education",
-    "text": "Education\nHighschool: Pittsburgh Science and Technology Academy (2018-2022)\nCollege: Allegheny Collage (2022-2026)"
   }
 ]
