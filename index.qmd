@@ -1,7 +1,6 @@
 ---
 title: "Preston Smith"
 toc: false
-style: styles.scss
 page-layout: custom
 
 about:
