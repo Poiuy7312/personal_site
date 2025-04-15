@@ -1,5 +1,23 @@
 /*-- scss:uses --*/
 
+a:hover,
+a:focus {
+    color: #e400ff !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ff00cc !important;
+}
+
+.navbar-nav {
+    color: #a2a2a2 !important;
+}
+
+table.quarto-listing-table a {
+    color: #ff00cc;
+}
+
+
 
 @media (min-width: 700px) {
     body {

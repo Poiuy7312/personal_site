@@ -12,9 +12,10 @@ website:
         text: Blog
       - href: art.qmd
         text: Art
+    background: '#171717'
   page-footer:
-    background: '#EDEAEA'
-    foreground: '#570054'
+    background: '#171717'
+    foreground: ' #e400ff'
     border: 'black'
     left:
     - href: index.qmd
@@ -29,7 +30,8 @@ website:
 
 format:
   html:
-    theme: [cosmo,styles.scss]
+    theme: [styles.scss]
+    mainfont: "sans-serif"
     toc: true
 
 

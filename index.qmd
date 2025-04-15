@@ -33,9 +33,15 @@ Description I'm a Software Engineering Major and Art,Science and Innovation Mino
 
 ## Education
 
-**Highschool:** Pittsburgh Science and Technology Academy *(2018-2022)*
+#### Pittsburgh Science and Technology Academy *(2018-2022)*
 
-**College:** Allegheny Collage *(2022-2026)*
+**Major:** Computers and Connections
+
+#### Allegheny College *(2022-2026)*
+
+**Major:** Software Engineering
+
+**Minor:** Art, Science and Innovation
 
 
 
