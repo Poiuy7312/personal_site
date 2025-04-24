@@ -1,0 +1,15 @@
+---
+title: "PlaceHolder-580"
+author: "Preston Smith"
+description: Junior year art project
+date: "2025-4-22"
+---
+
+
+
+:::
+![Encroaching Fire](../../images/Scene%201-580.png)
+![Floating City](../../images/Scene%202%20-580.png)
+![Raided Village](../../images/Scene%203-580.png)
+![Fractured Worlds](../../images/Scene%204-580.png)
+:::

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Digital Art – Preston Smith</title>
+<title>Art – Preston Smith</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -39,8 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0eed4480e56a7831ebe6ac4c7e22a0db.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-66484ba465ceb179181090d24282c156.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-ef23a7c93140d633729dc870172b5040.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-51c5125436f433d09ae0073974f7c14a.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,14 +70,72 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-Posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-Posts'] = new List('listing-Posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -110,48 +170,109 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Art</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RnJlc2htYW4lMjBZZWFyKDIwMjIp">Freshman Year(2022) <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SnVuaW9yJTIwWWVhcigyMDI1KQ==">Junior Year(2025) <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Digital Art</h1>
-<p class="subtitle lead">Preston Smith</p>
+
+
+
+
+<div id="listing-Posts" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="SnVuaW9yJTIwWWVhcigyMDI1KQ==" data-listing-date-sort="1745294400000" data-listing-file-modified-sort="1745509628741" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="thumbnail">
+<p><a href="./art-projects/580/580.html" class="no-external"></a></p><a href="./art-projects/580/580.html" class="no-external">
+<p class="card-img-top"><img src="images/Scene 1-580.png" alt="Encroaching Fire"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./art-projects/580/580.html" class="no-external"></a></p>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div>
-
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./art-projects/580/580.html" class="no-external">PlaceHolder-580</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./art-projects/580/580.html" class="no-external"></a>
 </div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p><img src="./images/Collage 1.jpg" class="img-fluid" alt="Apocalypse 1"> <img src="./images/Collage 2.jpg" class="img-fluid" alt="Apocalypse 2"> <img src="./images/Collage 3.jpg" class="img-fluid" alt="Apocalypse 3"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p><img src="./images/Image2.jpg" class="img-fluid" alt="Magic Lake"> <img src="./images/Illustration-01.jpg" class="img-fluid" alt="Space on Earth"> <img src="./images/Lost_City_Project.jpg" class="img-fluid" alt="Lost City"></p>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('SnVuaW9yJTIwWWVhcigyMDI1KQ=='); return false;">
+Junior Year(2025)
 </div>
 </div>
+<div class="listing-description">
+<a href="./art-projects/580/580.html" class="no-external">Junior year art project</a>
 </div>
+</div>
+<div class="metadata">
+<a href="./art-projects/580/580.html" class="no-external">
+<div class="listing-date">
+Apr 22, 2025
+</div>
+<div class="listing-author">
+Preston Smith
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="RnJlc2htYW4lMjBZZWFyKDIwMjIp" data-listing-date-sort="1674450000000" data-listing-file-modified-sort="1745509643961" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+<div class="thumbnail">
+<p><a href="./art-projects/187/art-2022.html" class="no-external"></a></p><a href="./art-projects/187/art-2022.html" class="no-external">
+<p class="card-img-top"><img src="images/Collage 1.jpg" alt="Apocalypse 1"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./art-projects/187/art-2022.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./art-projects/187/art-2022.html" class="no-external">PlaceHolder-187</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./art-projects/187/art-2022.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('RnJlc2htYW4lMjBZZWFyKDIwMjIp'); return false;">
+Freshman Year(2022)
+</div>
+</div>
+<div class="listing-description">
+<a href="./art-projects/187/art-2022.html" class="no-external">Freshman year art project</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./art-projects/187/art-2022.html" class="no-external">
+<div class="listing-date">
+Jan 23, 2023
+</div>
+<div class="listing-author">
+Preston Smith
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
 
 
 

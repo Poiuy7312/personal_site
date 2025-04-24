@@ -124,5 +124,26 @@
     "title": "Log Analyzer",
     "section": "Features",
     "text": "Features\n\nCumulative vs Time:\n\nCumulative\n\nCumulative means you can choose two different data points in compare i.e. total logs and errors. it adds them together cumulatively and currently tracks it every minute by default.\n\n\nCumulative Plot:\n\n\n\ncplot\n\n\n\n\n\nTime\n\nTime tracks one specified point of data over a specified period i.e. errors per hour or avg bytes per hour.\n\n\n\n\nDisplay different plots\nCurrently only one plot can be made at a time you can chose the x and y axis or if you just want to track something based on time then you pick the y axis.\n\nSort by Time:\nCurrently the logs can be sorted by second up to year. For example if you want to sort them by an hour then the graph the results will have points of data that have been collected over an hour. The data given will be errors occurred with in the hour, avg bytes transferred by hour.\n\n\nTime Plot:\n\n\n\nplot\n\n\nLog Analyzer"
+  },
+  {
+    "objectID": "art.html",
+    "href": "art.html",
+    "title": "Art",
+    "section": "",
+    "text": "PlaceHolder-580\n\n\n\n\n\n\nJunior Year(2025)\n\n\n\nJunior year art project\n\n\n\n\n\nApr 22, 2025\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nPlaceHolder-187\n\n\n\n\n\n\nFreshman Year(2022)\n\n\n\nFreshman year art project\n\n\n\n\n\nJan 23, 2023\n\n\nPreston Smith\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "art-projects/187/art-2022.html",
+    "href": "art-projects/187/art-2022.html",
+    "title": "PlaceHolder-187",
+    "section": "",
+    "text": ":::   \n   :::"
+  },
+  {
+    "objectID": "art-projects/580/580.html",
+    "href": "art-projects/580/580.html",
+    "title": "PlaceHolder-580",
+    "section": "",
+    "text": ":::     :::"
   }
 ]

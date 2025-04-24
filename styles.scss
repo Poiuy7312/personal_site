@@ -7,13 +7,33 @@ a:focus {
 }
 
 .navbar-nav .nav-link.active {
-    color: var(--secondary-color) !important;
+    color: var(--link-hover-color) !important;
+}
+
+.quarto-listing-category .category.active {
+    color: var(--link-hover-color);
 }
 
 
+// <--------- Art page --------->
+.quarto-title-block .quarto-title-banner {
+    background-image: url("images/Banner_Img.svg");
+    background-position: left;
+    background-size: contain;
+}
+
+#title-block-header>div.quarto-title-banner.page-columns.page-full>div>h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 1%;
+    max-width: 25%;
+}
+
+
+// <--------- Art page --------->
 
 #quarto-content>div.quarto-about-trestles>div.about-entity>div>a {
-    color: var(--icon-link-color) !important;
+    color: var(--icon-link-color);
 }
 
 #quarto-content>div.quarto-about-trestles>div.about-entity>div>a:hover,
