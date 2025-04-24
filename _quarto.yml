@@ -30,7 +30,9 @@ website:
 
 format:
   html:
-    theme: [styles.scss]
+    theme:
+      light: [styles.scss,light_mode.scss]
+      dark: [styles.scss,dark_mode.scss]
     mainfont: "sans-serif"
     toc: true
 

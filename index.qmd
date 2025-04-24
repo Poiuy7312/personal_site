@@ -59,7 +59,7 @@ Description I'm a Software Engineering Major and Art,Science and Innovation Mino
 
 ::: {layout="[[1,1,1,1,1] , [1,1,1,1]]"}
 
-![](images/Rust_programming_language_black_logo.svg)
+<i class = "rust_icon"></i>
 
 ![](images/Python-logo-notext.svg)
 

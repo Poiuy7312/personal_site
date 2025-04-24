@@ -1,46 +1,52 @@
 /*-- scss:uses --*/
 
+
 a:hover,
 a:focus {
-    color: #e400ff !important;
+    color: var(--link-hover-color) !important;
 }
 
 .navbar-nav .nav-link.active {
-    color: #ff00cc !important;
-}
-
-.navbar-nav {
-    color: #a2a2a2 !important;
-}
-
-table.quarto-listing-table a {
-    color: #ff00cc;
+    color: var(--secondary-color) !important;
 }
 
 
 
-@media (min-width: 700px) {
+#quarto-content>div.quarto-about-trestles>div.about-entity>div>a {
+    color: var(--icon-link-color) !important;
+}
+
+#quarto-content>div.quarto-about-trestles>div.about-entity>div>a:hover,
+#quarto-content>div.quarto-about-trestles>div.about-entity>div>a:focus {
+    color: var(--link-hover-color) !important;
+}
+
+
+
+
+@media (min-width: 800px) {
     body {
         width: 100vw;
         margin: 5%;
     }
 
     div.quarto-about-trestles {
-        background-color: black;
-        border-bottom: .4vh solid #570054;
-        box-shadow: 0px .25vh #ff00cc;
+        background-color: var(--secondary-bg-color);
+        border-bottom: .4vh var(--tertiary-color);
+        box-shadow: 0px .25vh var(--secondary-color);
         padding: 20%;
-        color: white;
+        color: var(--secondary-font-color) !important;
     }
 
+
     #quarto-content {
-        background-color: white;
+        background-color: var(--primary-bg-color);
         margin-top: 0%;
         padding: 5%;
     }
 
     #quarto-document-content {
-        background-color: white;
+        background-color: var(--primary-bg-color);
     }
 
     #skills>div.quarto-layout-panel {
@@ -63,19 +69,19 @@ table.quarto-listing-table a {
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     body {
         width: 100vw;
         margin: 5%;
     }
 
     div.quarto-about-trestles {
-        background-color: black;
-        border-bottom: .4vh solid #570054;
-        box-shadow: 0px .25vh #ff00cc;
+        background-color: var(--secondary-bg-color);
+        border-bottom: .4vh solid var(--tertiary-color);
+        box-shadow: 0px .25vh var(--secondary-color);
         justify-content: stretch;
         padding: 5%;
-        color: white;
+        color: var(--secondary-font-color);
     }
 
     #quarto-content>div.quarto-about-trestles>div.about-entity {
@@ -84,13 +90,13 @@ table.quarto-listing-table a {
 
 
     #quarto-content {
-        background-color: white;
+        background-color: var(--primary-bg-color);
         margin-top: 0%;
         padding: 5%;
     }
 
     #quarto-document-content {
-        background-color: white;
+        background-color: var(--primary-bg-color);
     }
 
     #skills>div.quarto-layout-panel {

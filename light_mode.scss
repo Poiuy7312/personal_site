@@ -1,0 +1,15 @@
+/*-- scss:defaults --*/
+$body-bg: white;
+$body-color: black;
+$link-color: #890098;
+
+:root {
+    --secondary-bg-color: black;
+    --link-hover-color: #e400ff;
+    --secondary-font-color: white;
+    --icon-link-color: white;
+}
+
+.rust_icon::before {
+    content: url("./images/Rust_programming_language_black_logo.svg");
+}
