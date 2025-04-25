@@ -60,7 +60,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Log Analyzer\n\n\n\n\n\n\nSoftware Engineering\n\n\n\nAnalyzes and plots data from log files. based in rust\n\n\n\n\n\nFeb 3, 2025\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nRust based Password Checker and Authenticator\n\n\n\n\n\n\nSoftware Engineering\n\n\n\nStores usernames and passwords and with end to end encryption between a simple server and client.\n\n\n\n\n\nDec 4, 2024\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nTag Game\n\n\n\n\n\n\nGame Design\n\n\n\nA simple pygame where you run away from the AI chasing you.\n\n\n\n\n\nOct 5, 2024\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nChasten\n\n\n\n\n\n\nSoftware Engineering\n\n\n\nChecks for patterns in codes using x-path expressions\n\n\n\n\n\nSep 15, 2023\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nGolem\n\n\n\n\n\n\nGame Design\n\n\n\nWeb-based game made in twine for a college project\n\n\n\n\n\nMay 9, 2023\n\n\nPreston Smith\n\n\n\n\n\n\nNo matching items"
+    "text": "Log Analyzer\n\n\n\n\n\n\nSoftware Engineering\n\n\n\nAnalyzes and plots data from log files. based in rust\n\n\n\n\n\nFeb 3, 2025\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nRust based Password Checker and Authenticator\n\n\n\n\n\n\nSoftware Engineering\n\n\n\nStores usernames and passwords and with end to end encryption between a simple server and client.\n\n\n\n\n\nDec 4, 2024\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nTag Game\n\n\n\n\n\n\nGame Design\n\n\n\nA simple pygame where you run away from the AI chasing you.\n\n\n\n\n\nOct 5, 2024\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nCHKN Golfing language\n\n\n\n\n\n\nSoftware Engineering\n\n\n\nGolfing language based on the lox interpreter\n\n\n\n\n\nMay 10, 2024\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nChasten\n\n\n\n\n\n\nSoftware Engineering\n\n\n\nChecks for patterns in codes using x-path expressions\n\n\n\n\n\nSep 15, 2023\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nGolem\n\n\n\n\n\n\nGame Design\n\n\n\nWeb-based game made in twine for a college project\n\n\n\n\n\nMay 9, 2023\n\n\nPreston Smith\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/Game Design/tag.html",
@@ -130,20 +130,104 @@
     "href": "art.html",
     "title": "Art",
     "section": "",
-    "text": "PlaceHolder-580\n\n\n\n\n\n\nJunior Year(2025)\n\n\n\nJunior year art project\n\n\n\n\n\nApr 22, 2025\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nPlaceHolder-187\n\n\n\n\n\n\nFreshman Year(2022)\n\n\n\nFreshman year art project\n\n\n\n\n\nJan 23, 2023\n\n\nPreston Smith\n\n\n\n\n\n\nNo matching items"
+    "text": "I create art where you are meant to imagine yourself within the art and the world that it’s supposed to represent. I’m heavily influenced by different fantasy videogames Berzerk and on a lesser level differing movie scenes and the emotions they invoke. As a result of this my art and what is included in it is heavily influenced by what I’m interested in at the time. I’ll often see something in a Videogame or in a movie and wonder what that would look like if it were in the real world or something similar. My process of working is very much thinking about what I want to see in the work and then trying to implement it as best as possible so while it starts with a general Idea it normally evolves into something with other elements to it. I view my process as a form of world building as while it stems from, I think this is cool so I’ll just put it in there. I do normally think about a situation where it would exist within the context of the work. I normally view the work as a somewhat fractured world where different spaces and ideas are interacting and colliding. I like art to be vibrant so I can see the differences more clearly, and it draws my attention to things I wouldn’t normally notice even when I’m the one making it."
   },
   {
     "objectID": "art-projects/187/art-2022.html",
     "href": "art-projects/187/art-2022.html",
-    "title": "PlaceHolder-187",
+    "title": "Things From the Future Project",
     "section": "",
-    "text": ":::   \n   :::"
+    "text": "Apocalypse 1\n\n\n\n\n\n\n\nApocalypse 2\n\n\n\n\n\n\n\nApocalypse 3"
   },
   {
     "objectID": "art-projects/580/580.html",
     "href": "art-projects/580/580.html",
-    "title": "PlaceHolder-580",
+    "title": "Imagined Worlds Exhibition",
     "section": "",
-    "text": ":::     :::"
+    "text": "Encroaching Fire\n\n\n\n\n\n\n\nFloating City\n\n\n\n\n\n\n\n\n\nRaided Village\n\n\n\n\n\n\n\nFractured Worlds"
+  },
+  {
+    "objectID": "art.html#artist-statement",
+    "href": "art.html#artist-statement",
+    "title": "Art",
+    "section": "",
+    "text": "I create art where you are meant to imagine yourself within the art and the world that it’s supposed to represent. I’m heavily influenced by different fantasy videogames Berzerk and on a lesser level differing movie scenes and the emotions they invoke. As a result of this my art and what is included in it is heavily influenced by what I’m interested in at the time. I’ll often see something in a Videogame or in a movie and wonder what that would look like if it were in the real world or something similar. My process of working is very much thinking about what I want to see in the work and then trying to implement it as best as possible so while it starts with a general Idea it normally evolves into something with other elements to it. I view my process as a form of world building as while it stems from, I think this is cool so I’ll just put it in there. I do normally think about a situation where it would exist within the context of the work. I normally view the work as a somewhat fractured world where different spaces and ideas are interacting and colliding. I like art to be vibrant so I can see the differences more clearly, and it draws my attention to things I wouldn’t normally notice even when I’m the one making it."
+  },
+  {
+    "objectID": "art.html#works",
+    "href": "art.html#works",
+    "title": "Art",
+    "section": "Works",
+    "text": "Works\n\n\n\n\n\n\n\n\n\n\nImagined Worlds Exhibition\n\n\n\n\n\n\nJunior Year(2025)\n\n\n\nJunior year art project\n\n\n\n\n\nApr 22, 2025\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nOther Projects\n\n\n\n\n\n\nFreshman Year(2022)\n\n\n\nOther stand alone projects\n\n\n\n\n\nMar 25, 2023\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nThings From the Future Project\n\n\n\n\n\n\nFreshman Year(2022)\n\n\n\nA visualization of an apocalyptic future (Digital Collage)\n\n\n\n\n\nFeb 20, 2023\n\n\nPreston Smith\n\n\n\n\n\n\n\n\n\n\n\n\nHistorical Minecraft Villager Documentary\n\n\n\n\n\n\nFreshman Year(2022)\n\n\n\nFreshman year art project (Video)\n\n\n\n\n\nJan 15, 2023\n\n\nPreston Smith\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "art-projects/580/580.html#artist-statement",
+    "href": "art-projects/580/580.html#artist-statement",
+    "title": "Imagined Worlds Exhibition",
+    "section": "Artist Statement",
+    "text": "Artist Statement\nJunior year art project"
+  },
+  {
+    "objectID": "art-projects/187/villager_video.html#description",
+    "href": "art-projects/187/villager_video.html#description",
+    "title": "Historical Minecraft Villager Documentary",
+    "section": "Description",
+    "text": "Description\nThis was a project I made freshman year of collage. I wanted to make a parody of documentaries and I thought the way that minecraft villagers are treated in the game was a good thing to make it on. Because if you think about it the way villagers are normally used in a minecraft world is actually quite cruel."
+  },
+  {
+    "objectID": "projects/Software Engineering/chkn.html",
+    "href": "projects/Software Engineering/chkn.html",
+    "title": "CHKN Golfing language",
+    "section": "",
+    "text": "This was a very rudimentary language designed for golfing. It was based on the lox interpreter and includes loops strings integers string concantetation. Some limitation it doesn’t include data structures which can heavily inflate the byte count for certain golf challenges."
+  },
+  {
+    "objectID": "projects/Software Engineering/chkn.html#description",
+    "href": "projects/Software Engineering/chkn.html#description",
+    "title": "CHKN Golfing language",
+    "section": "",
+    "text": "This was a very rudimentary language designed for golfing. It was based on the lox interpreter and includes loops strings integers string concantetation. Some limitation it doesn’t include data structures which can heavily inflate the byte count for certain golf challenges."
+  },
+  {
+    "objectID": "projects/Software Engineering/chkn.html#examples",
+    "href": "projects/Software Engineering/chkn.html#examples",
+    "title": "CHKN Golfing language",
+    "section": "Examples",
+    "text": "Examples\nV: c = 0. W: (c&lt;10)c++ P: \"*\"*10.;\nOutput:\n**********\n**********\n**********\n**********\n**********\n**********\n**********\n**********\n**********\n**********\nC: a(b,c)W:(c!=b)P:\"lox\"*c.I:(b&lt;1)c--;E: c++;;;a(6,1)a(0,4)\nOutput:\nlox\nloxlox\nloxloxlox\nloxloxloxlox\nloxloxloxloxlox\nloxloxloxlox\nloxloxlox\nloxlox\nlox"
+  },
+  {
+    "objectID": "art-projects/580/580.html#description",
+    "href": "art-projects/580/580.html#description",
+    "title": "Imagined Worlds Exhibition",
+    "section": "Description",
+    "text": "Description\nThese are digital collages that are meant to recreate a feeling or tone I felt while playing through a game and/or watching a specific scene in a movie there supposed to be reminiscent of cinematic shots while also being distinct environment in and of themselves. Originally they were going to form some sort of narrative which I found tedious and restricted my creativity in a way. They were all made with a combination of Photoshop and illustrator with photos from unsplash and concept art from differing games and movies."
+  },
+  {
+    "objectID": "art-projects/580/580.html#exhibition-photos",
+    "href": "art-projects/580/580.html#exhibition-photos",
+    "title": "Imagined Worlds Exhibition",
+    "section": "Exhibition Photos",
+    "text": "Exhibition Photos"
+  },
+  {
+    "objectID": "art-projects/580/580.html#images",
+    "href": "art-projects/580/580.html#images",
+    "title": "Imagined Worlds Exhibition",
+    "section": "",
+    "text": "Encroaching Fire\n\n\n\n\n\n\n\nFloating City\n\n\n\n\n\n\n\n\n\nRaided Village\n\n\n\n\n\n\n\nFractured Worlds"
+  },
+  {
+    "objectID": "art-projects/580/580.html#exhibition-images",
+    "href": "art-projects/580/580.html#exhibition-images",
+    "title": "Imagined Worlds Exhibition",
+    "section": "Exhibition Images",
+    "text": "Exhibition Images"
+  },
+  {
+    "objectID": "art-projects/187/art-2022.html#description",
+    "href": "art-projects/187/art-2022.html#description",
+    "title": "Things From the Future Project",
+    "section": "Description",
+    "text": "Description\nI didn’t really start out with a general idea at first. I knew I wanted to do stuff with caves and something a bit weird. I ended up getting stuff which I think has a kind of a religious vibe and they all have kind of a hellish landscape. To me they have a tone of unsettling and despair. It’s not clear what is happening in the collage so I think a lot of it is up to interpretation but the coloring and I think kind of pushes the tone into unsettling and despair and it gives a hellish look. I used statues as my object because I wanted to stuff with scale for the most part and I think statues are a good way to do that and kind of just have a large object. All of these combined kind of made so I the arc of it all is a society that collapsed at least a thousand years in the future. The objects in the picture themselves don’t really serve a purpose in context. Because I thought of them as things people built for some cultural reason but not really anything practical and since it collapsed I wanted people to be kind of exploring them in there kind of ruins of a former civilization that collapsed long enough ago that people don’t know much about them so the people in the future don’t know much more than people actually looking at the collages. Overall The backstory of the collages are heavily up to interpretation but I think they all give off the same type of vibe."
   }
 ]

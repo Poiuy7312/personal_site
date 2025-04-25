@@ -1,0 +1,10 @@
+---
+title: "Other Projects"
+author: "Preston Smith"
+description: Other stand alone projects
+date: "2023-3-25"
+---
+
+![Magic Lake](../../images/Image2.jpg)
+![Space on Earth](../../images/Illustration-01.jpg)
+![Lost City](../../images/Lost_City_Project.jpg)

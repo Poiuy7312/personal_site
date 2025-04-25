@@ -1,0 +1,50 @@
+---
+title: "CHKN Golfing language"
+author: "Preston Smith"
+description: Golfing language based on the lox interpreter
+date: "2024-5-10"
+---
+
+
+## Description
+
+This was a very rudimentary language designed for golfing. It was based on the lox interpreter and includes loops strings integers string concantetation. Some limitation it doesn't include data structures which can heavily inflate the byte count for certain golf challenges.
+
+## Examples
+
+```
+V: c = 0. W: (c<10)c++ P: "*"*10.;
+```
+
+**Output:** 
+
+```
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+```
+
+```
+C: a(b,c)W:(c!=b)P:"lox"*c.I:(b<1)c--;E: c++;;;a(6,1)a(0,4)
+```
+
+**Output**:
+
+```
+lox
+loxlox
+loxloxlox
+loxloxloxlox
+loxloxloxloxlox
+loxloxloxlox
+loxloxlox
+loxlox
+lox
+```

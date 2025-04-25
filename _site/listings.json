@@ -5,6 +5,7 @@
       "/projects/Software Engineering/log_analyzer.html",
       "/projects/Software Engineering/rust_password.html",
       "/projects/Game Design/tag.html",
+      "/projects/Software Engineering/chkn.html",
       "/projects/Software Engineering/chasten.html",
       "/projects/Game Design/Golem.html"
     ]
@@ -15,6 +16,7 @@
       "/projects/Software Engineering/log_analyzer.html",
       "/projects/Software Engineering/rust_password.html",
       "/projects/Game Design/tag.html",
+      "/projects/Software Engineering/chkn.html",
       "/projects/Software Engineering/chasten.html",
       "/projects/Game Design/Golem.html"
     ]
@@ -23,7 +25,9 @@
     "listing": "/art.html",
     "items": [
       "/art-projects/580/580.html",
-      "/art-projects/187/art-2022.html"
+      "/art-projects/187/other.html",
+      "/art-projects/187/art-2022.html",
+      "/art-projects/187/villager_video.html"
     ]
   }
 ]

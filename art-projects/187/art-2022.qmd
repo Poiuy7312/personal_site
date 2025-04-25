@@ -1,16 +1,18 @@
 ---
-title: "PlaceHolder-187"
+title: "Things From the Future Project"
 author: "Preston Smith"
-description: Freshman year art project
-date: "2023-1-23"
+description: A visualization of an apocalyptic future (Digital Collage)
+date: "2023-2-20"
 ---
 
-:::
+::: {layout-ncol=3}
 ![Apocalypse 1](../../images/Collage%201.jpg)
-![Apocalypse 2](../../images/Collage%202.jpg)
-![Apocalypse 3](../../images/Collage%203.jpg)
 
-![Magic Lake](../../images/Image2.jpg)
-![Space on Earth](../../images/Illustration-01.jpg)
-![Lost City](../../images/Lost_City_Project.jpg)
+![Apocalypse 2](../../images/Collage%202.jpg)
+
+![Apocalypse 3](../../images/Collage%203.jpg)
 :::
+
+## Description
+
+I didn’t really start out with a general idea at first. I knew I wanted to do stuff with caves and something a bit weird. I ended up getting stuff which I think has a kind of a religious vibe and they all have kind of a hellish landscape. To me they have a tone of unsettling and despair. It's not clear  what is happening in the collage so I think a lot of it is up to interpretation but the coloring and I think kind of pushes the tone into unsettling and despair and it gives a hellish look. I used statues as my object because I wanted to stuff with scale for the most part and I think statues are a good way to do that and kind of just have a large object. All of these combined kind of made so I the arc of it all is a society that collapsed at least a thousand years in the future. The objects in the picture themselves don’t really serve a purpose in context. Because I thought of them as things people built for some cultural reason but not really anything practical and since it collapsed I wanted people to be kind of exploring them in there kind of ruins of a former civilization that collapsed long enough ago that people don’t know much about them so the people in the future don’t know much more than people actually looking at the collages. Overall The backstory of the collages are heavily up to interpretation but I think they all give off the same type of vibe.

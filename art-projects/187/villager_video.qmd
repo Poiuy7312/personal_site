@@ -1,0 +1,13 @@
+---
+title: "Historical Minecraft Villager Documentary"
+author: "Preston Smith"
+description: Freshman year art project (Video)
+date: "2023-1-15"
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TWwIqZI8m8I?si=J1SDMHAU027aTs5p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+## Description
+
+This was a project I made freshman year of collage. I wanted to make a parody of documentaries and I thought the way that minecraft villagers are treated in the game was a good thing to make it on. Because if you think about it the way villagers are normally used in a minecraft world is actually quite cruel. 

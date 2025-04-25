@@ -15,6 +15,17 @@ a:focus {
 }
 
 
+div.quarto-post .listing-categories .listing-category {
+    color: var(--bs-body-color) !important;
+}
+
+
+pre {
+    color: var(--code-block-font-color) !important;
+    background-color: var(--code-block-bg-color) !important;
+}
+
+
 // <--------- Art page --------->
 .quarto-title-block .quarto-title-banner {
     background-image: url("images/Banner_Img.svg");

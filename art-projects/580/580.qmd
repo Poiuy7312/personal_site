@@ -1,15 +1,47 @@
 ---
-title: "PlaceHolder-580"
+title: "Imagined Worlds Exhibition"
 author: "Preston Smith"
 description: Junior year art project
 date: "2025-4-22"
 ---
 
 
+## Images
 
-:::
+### Digital Images
+
+::: {layout="[[1,1], [1,1]]"}
 ![Encroaching Fire](../../images/Scene%201-580.png)
+
 ![Floating City](../../images/Scene%202%20-580.png)
+
 ![Raided Village](../../images/Scene%203-580.png)
+
 ![Fractured Worlds](../../images/Scene%204-580.png)
 :::
+
+### Exhibition Images
+
+::: {layout="[[1,1,1,1], [1,1,1,1]]"}
+
+![](../../images/20250417_104848.jpg)
+
+![](../../images/20250417_104856.jpg)
+
+![](../../images/20250417_104900.jpg)
+
+![](../../images/20250417_104906.jpg)
+
+![](../../images/20250417_104909.jpg)
+
+![](../../images/20250417_104921.jpg)
+
+![](../../images/20250417_104923.jpg)
+
+![](../../images/20250417_104926.jpg)
+
+:::
+
+## Description
+
+These are digital collages that are meant to recreate a feeling or tone I felt while playing through a game and/or watching a specific scene in a movie there supposed to be reminiscent of cinematic shots while also being distinct environment in and of themselves. Originally they were going to form some sort of narrative which I found tedious and restricted my creativity in a way. They were all made with a combination of Photoshop and illustrator with photos from unsplash and concept art from differing games and movies.
