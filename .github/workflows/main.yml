@@ -33,6 +33,23 @@ jobs:
         with:
           path: ./_site
         if: always()
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+            
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+            
+      - name: Install Dependencies
+        run: npm install
+      
+      - name: Run JavaScript Tests
+        run: npm test
   deploy:
     environment:
       name: github-pages
